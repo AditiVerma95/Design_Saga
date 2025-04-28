@@ -1,10 +1,46 @@
+using System;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+   [SerializeField] private GameObject inventoryPanel;
+   private bool isInventoryOpen = false;
+   
    [SerializeField] private GameObject kitchenItems;
    [SerializeField] private GameObject livingRoomItems;
    [SerializeField] private GameObject bedroomItems;
+
+   private void Start()
+   {
+      //InputManager.Instance.inventoryEvent += OpenCloseInventory;
+   }
+
+   private void OpenCloseInventory(object sender, EventArgs e) {
+      if (isInventoryOpen)
+      {
+         CloseInventory();
+      }
+      else
+      {
+         OpenInventory();
+      }
+   }
+
+   private void OpenInventory()
+   {
+      inventoryPanel.SetActive(true);
+      //InputManager.Instance.playerInputAction.Player.Disable();
+      isInventoryOpen = true;
+      Cursor.lockState = CursorLockMode.None;
+   }
+   
+   private void CloseInventory()
+   {
+      inventoryPanel.SetActive(false);
+      //InputManager.Instance.playerInputAction.Player.Enable();
+      isInventoryOpen = false;
+      Cursor.lockState = CursorLockMode.Locked;
+   }
 
    public void EnableKitchenItems()
    {
