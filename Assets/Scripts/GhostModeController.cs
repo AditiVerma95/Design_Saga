@@ -9,24 +9,32 @@ public class GhostModeController : MonoBehaviour {
     
     private void Start() {
         UserInputManager.Instance.spawnEvent += SpawnObject;
+        
     }
 
 
     private void Update() {
         Vector2 look = UserInputManager.Instance.lookInput;
-
+        Vector2 move = UserInputManager.Instance.moveInput;
         float mouseX = look.x * sensitivity * Time.deltaTime;
         float mouseY = look.y * sensitivity * Time.deltaTime;
-
+        
         // Rotate up/down
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
+        
         // Rotate left/right
         yRotation += mouseX;
 
         // Apply rotation
         camera.transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+        // Movement logic
+        
+        // Movement logic
+        Vector3 moveDirection = camera.transform.right * move.x + camera.transform.forward * move.y;
+        transform.position += moveDirection * Time.deltaTime * sensitivity; // 5f is movement speed
+        
+
     }
 
     private void SpawnObject(object sender, EventArgs e) {

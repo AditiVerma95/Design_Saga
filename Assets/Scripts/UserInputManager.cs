@@ -12,6 +12,7 @@ public class UserInputManager : MonoBehaviour {
 
     public event EventHandler spawnEvent;
     public event EventHandler enableDisabled;
+   
     
     private void Awake() {
         userInputActionAsset = new UserInputActionAsset();    
@@ -28,6 +29,7 @@ public class UserInputManager : MonoBehaviour {
         userInputActionAsset.Ghost.Look.performed += context => lookInput = context.ReadValue<Vector2>();
         userInputActionAsset.Ghost.Look.canceled += context => lookInput = Vector2.zero;
         userInputActionAsset.Ghost.Spawn.performed += context => spawnEvent?.Invoke(this, EventArgs.Empty);
+        
         userInputActionAsset.UI.Enable();
         userInputActionAsset.UI.EnableDisable.performed += context => enableDisabled?.Invoke(this, EventArgs.Empty);
     }
