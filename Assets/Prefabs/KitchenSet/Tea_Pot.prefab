@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 880078460547998644}
   - component: {fileID: 4015118942306561235}
   - component: {fileID: 3005499230553644844}
-  - component: {fileID: 6405839033017222168}
   - component: {fileID: 8840334611908033877}
   m_Layer: 0
   m_Name: Tea_Pot
@@ -111,18 +110,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3983345248700840609, guid: 718e6fe994a190f4da893119bdfd6427, type: 3}
---- !u!114 &6405839033017222168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8782807151269618354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ebcb438707b5444a0c2b5252825679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &8840334611908033877
 Rigidbody:
   m_ObjectHideFlags: 0

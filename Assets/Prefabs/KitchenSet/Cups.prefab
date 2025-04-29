@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1152122835571427804}
   - component: {fileID: 2427572105718590029}
   - component: {fileID: 1399721945454612619}
-  - component: {fileID: 2011327373264461005}
   - component: {fileID: 2980185204660443961}
   m_Layer: 0
   m_Name: Cups
@@ -111,18 +110,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8404793660989677666, guid: 718e6fe994a190f4da893119bdfd6427, type: 3}
---- !u!114 &2011327373264461005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404504480104963515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ebcb438707b5444a0c2b5252825679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &2980185204660443961
 Rigidbody:
   m_ObjectHideFlags: 0

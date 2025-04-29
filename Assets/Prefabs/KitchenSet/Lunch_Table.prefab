@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3271209351767088951}
   - component: {fileID: 6196191302636881397}
   - component: {fileID: 6377523069018384556}
-  - component: {fileID: 7631037694509087635}
   - component: {fileID: 8298245154402607271}
   m_Layer: 0
   m_Name: Lunch_Table
@@ -112,18 +111,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3520402956905373325, guid: 718e6fe994a190f4da893119bdfd6427, type: 3}
---- !u!114 &7631037694509087635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104673684880876741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ebcb438707b5444a0c2b5252825679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &8298245154402607271
 Rigidbody:
   m_ObjectHideFlags: 0

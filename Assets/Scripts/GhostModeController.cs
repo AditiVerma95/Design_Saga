@@ -6,9 +6,13 @@ public class GhostModeController : MonoBehaviour {
     [SerializeField] public float sensitivity = 4f;
     private float xRotation = 0f; // up/down
     private float yRotation = 0f; // left/right
+    
+    private void Start() {
+        UserInputManager.Instance.spawnEvent += SpawnObject;
+    }
 
-    private void Update()
-    {
+
+    private void Update() {
         Vector2 look = UserInputManager.Instance.lookInput;
 
         float mouseX = look.x * sensitivity * Time.deltaTime;
@@ -23,5 +27,15 @@ public class GhostModeController : MonoBehaviour {
 
         // Apply rotation
         camera.transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+    }
+
+    private void SpawnObject(object sender, EventArgs e) {
+        //setting up tail(origin)
+        Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
+       
+        if (Physics.Raycast(ray,  out RaycastHit hit, 50f)) {
+            Debug.Log(hit.point);
+            Instantiate(UIManager.Instance.currentSelectedPrefab, hit.point, Quaternion.identity);
+        }
     }
 }

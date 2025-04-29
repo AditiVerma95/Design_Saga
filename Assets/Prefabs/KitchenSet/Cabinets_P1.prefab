@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2780672502864253388}
   - component: {fileID: 4730478182217854922}
   - component: {fileID: 6886734427576547902}
-  - component: {fileID: 4402251179726378518}
   - component: {fileID: 6788686751157236951}
   m_Layer: 0
   m_Name: Cabinets_P1
@@ -113,18 +112,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2720991184812203913, guid: 718e6fe994a190f4da893119bdfd6427, type: 3}
---- !u!114 &4402251179726378518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7105358629316934007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ebcb438707b5444a0c2b5252825679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &6788686751157236951
 Rigidbody:
   m_ObjectHideFlags: 0

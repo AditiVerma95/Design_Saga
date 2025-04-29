@@ -44,6 +44,15 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Spawn"",
+                    ""type"": ""Button"",
+                    ""id"": ""59ebe59a-7a84-4826-bfc2-b1d06b66743b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -112,6 +121,45 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8652fd1c-caac-42df-bed3-f5dd44648fa9"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Spawn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""UI"",
+            ""id"": ""716abc31-1d4b-4fbc-b777-cfae7c7d89f4"",
+            ""actions"": [
+                {
+                    ""name"": ""EnableDisable"",
+                    ""type"": ""Button"",
+                    ""id"": ""0b09336e-c11c-4281-b8ad-1bd57ffa0153"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""7597b5ca-794e-4c66-a409-b60081b5f71e"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EnableDisable"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -122,11 +170,16 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         m_Ghost = asset.FindActionMap("Ghost", throwIfNotFound: true);
         m_Ghost_Move = m_Ghost.FindAction("Move", throwIfNotFound: true);
         m_Ghost_Look = m_Ghost.FindAction("Look", throwIfNotFound: true);
+        m_Ghost_Spawn = m_Ghost.FindAction("Spawn", throwIfNotFound: true);
+        // UI
+        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
+        m_UI_EnableDisable = m_UI.FindAction("EnableDisable", throwIfNotFound: true);
     }
 
     ~@UserInputActionAsset()
     {
         UnityEngine.Debug.Assert(!m_Ghost.enabled, "This will cause a leak and performance issues, UserInputActionAsset.Ghost.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, UserInputActionAsset.UI.Disable() has not been called.");
     }
 
     public void Dispose()
@@ -190,12 +243,14 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private List<IGhostActions> m_GhostActionsCallbackInterfaces = new List<IGhostActions>();
     private readonly InputAction m_Ghost_Move;
     private readonly InputAction m_Ghost_Look;
+    private readonly InputAction m_Ghost_Spawn;
     public struct GhostActions
     {
         private @UserInputActionAsset m_Wrapper;
         public GhostActions(@UserInputActionAsset wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Ghost_Move;
         public InputAction @Look => m_Wrapper.m_Ghost_Look;
+        public InputAction @Spawn => m_Wrapper.m_Ghost_Spawn;
         public InputActionMap Get() { return m_Wrapper.m_Ghost; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -211,6 +266,9 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
+            @Spawn.started += instance.OnSpawn;
+            @Spawn.performed += instance.OnSpawn;
+            @Spawn.canceled += instance.OnSpawn;
         }
 
         private void UnregisterCallbacks(IGhostActions instance)
@@ -221,6 +279,9 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
+            @Spawn.started -= instance.OnSpawn;
+            @Spawn.performed -= instance.OnSpawn;
+            @Spawn.canceled -= instance.OnSpawn;
         }
 
         public void RemoveCallbacks(IGhostActions instance)
@@ -238,9 +299,60 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         }
     }
     public GhostActions @Ghost => new GhostActions(this);
+
+    // UI
+    private readonly InputActionMap m_UI;
+    private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
+    private readonly InputAction m_UI_EnableDisable;
+    public struct UIActions
+    {
+        private @UserInputActionAsset m_Wrapper;
+        public UIActions(@UserInputActionAsset wrapper) { m_Wrapper = wrapper; }
+        public InputAction @EnableDisable => m_Wrapper.m_UI_EnableDisable;
+        public InputActionMap Get() { return m_Wrapper.m_UI; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
+        public void AddCallbacks(IUIActions instance)
+        {
+            if (instance == null || m_Wrapper.m_UIActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_UIActionsCallbackInterfaces.Add(instance);
+            @EnableDisable.started += instance.OnEnableDisable;
+            @EnableDisable.performed += instance.OnEnableDisable;
+            @EnableDisable.canceled += instance.OnEnableDisable;
+        }
+
+        private void UnregisterCallbacks(IUIActions instance)
+        {
+            @EnableDisable.started -= instance.OnEnableDisable;
+            @EnableDisable.performed -= instance.OnEnableDisable;
+            @EnableDisable.canceled -= instance.OnEnableDisable;
+        }
+
+        public void RemoveCallbacks(IUIActions instance)
+        {
+            if (m_Wrapper.m_UIActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IUIActions instance)
+        {
+            foreach (var item in m_Wrapper.m_UIActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_UIActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public UIActions @UI => new UIActions(this);
     public interface IGhostActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
+        void OnSpawn(InputAction.CallbackContext context);
+    }
+    public interface IUIActions
+    {
+        void OnEnableDisable(InputAction.CallbackContext context);
     }
 }

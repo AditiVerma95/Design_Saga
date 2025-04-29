@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1075102774441677618}
   - component: {fileID: 764166125114261581}
   - component: {fileID: -8397970077783212094}
-  - component: {fileID: -965210744185330181}
   - component: {fileID: 5361971781830184092}
   m_Layer: 0
   m_Name: Kitchen_Lights
@@ -112,18 +111,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4327348974664587050, guid: 718e6fe994a190f4da893119bdfd6427, type: 3}
---- !u!114 &-965210744185330181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8833789947885396499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ebcb438707b5444a0c2b5252825679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &5361971781830184092
 Rigidbody:
   m_ObjectHideFlags: 0

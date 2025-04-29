@@ -699,7 +699,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4325341545489445054}
   - component: {fileID: -7090111480751564925}
-  - component: {fileID: 9109374416299390745}
   - component: {fileID: 2445488623239482272}
   m_Layer: 0
   m_Name: oven
@@ -756,18 +755,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &9109374416299390745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3906667917503689607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ebcb438707b5444a0c2b5252825679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &2445488623239482272
 Rigidbody:
   m_ObjectHideFlags: 0

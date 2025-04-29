@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2333908643129443543}
   - component: {fileID: 8165455931784076674}
   - component: {fileID: 4128072975144174099}
-  - component: {fileID: 5036488700790347171}
   - component: {fileID: -6439394446043017456}
   m_Layer: 0
   m_Name: Fridge
@@ -112,18 +111,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3082250236548730855, guid: 718e6fe994a190f4da893119bdfd6427, type: 3}
---- !u!114 &5036488700790347171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3565982824656612508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ebcb438707b5444a0c2b5252825679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &-6439394446043017456
 Rigidbody:
   m_ObjectHideFlags: 0

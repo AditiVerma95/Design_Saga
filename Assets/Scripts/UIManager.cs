@@ -9,10 +9,16 @@ public class UIManager : MonoBehaviour
    [SerializeField] private GameObject kitchenItems;
    [SerializeField] private GameObject livingRoomItems;
    [SerializeField] private GameObject bedroomItems;
+   [SerializeField] public GameObject currentSelectedPrefab = null;
+   public static UIManager Instance;
+   
+   private void Awake() {
+      Instance = this;
+   }
 
-   private void Start()
-   {
-      //InputManager.Instance.inventoryEvent += OpenCloseInventory;
+   private void Start() {
+      
+      UserInputManager.Instance.enableDisabled += OpenCloseInventory;
    }
 
    private void OpenCloseInventory(object sender, EventArgs e) {
@@ -25,13 +31,18 @@ public class UIManager : MonoBehaviour
          OpenInventory();
       }
    }
-
+   
+   public void SpawnGameObject(GameObject prefab) {
+      currentSelectedPrefab = prefab;
+   }
+   
    private void OpenInventory()
    {
       inventoryPanel.SetActive(true);
       //InputManager.Instance.playerInputAction.Player.Disable();
       isInventoryOpen = true;
       Cursor.lockState = CursorLockMode.None;
+      UserInputManager.Instance.userInputActionAsset.Ghost.Disable();
    }
    
    private void CloseInventory()
@@ -40,6 +51,7 @@ public class UIManager : MonoBehaviour
       //InputManager.Instance.playerInputAction.Player.Enable();
       isInventoryOpen = false;
       Cursor.lockState = CursorLockMode.Locked;
+      UserInputManager.Instance.userInputActionAsset.Ghost.Enable();
    }
 
    public void EnableKitchenItems()
