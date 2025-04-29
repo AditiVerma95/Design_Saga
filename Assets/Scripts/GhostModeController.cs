@@ -9,6 +9,7 @@ public class GhostModeController : MonoBehaviour {
     
     private void Start() {
         UserInputManager.Instance.spawnEvent += SpawnObject;
+        UserInputManager.Instance.removeEvent += RemoveObject;
         
     }
 
@@ -44,6 +45,19 @@ public class GhostModeController : MonoBehaviour {
         if (Physics.Raycast(ray,  out RaycastHit hit, 50f)) {
             Debug.Log(hit.point);
             Instantiate(UIManager.Instance.currentSelectedPrefab, hit.point, Quaternion.identity);
+            GameObject spawned = Instantiate(UIManager.Instance.currentSelectedPrefab, hit.point, Quaternion.identity);
+            spawned.tag = "SpawnedObject";
         }
     }
+    private void RemoveObject(object sender, EventArgs e) {
+        Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
+    
+        if (Physics.Raycast(ray, out RaycastHit hit, 50f)) {
+            // Optional: Only destroy objects with a specific tag to avoid deleting random scene stuff
+            if (hit.collider.CompareTag("SpawnedObject")) {
+                Destroy(hit.collider.gameObject);
+            }
+        }
+    }
+
 }

@@ -53,6 +53,15 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Despawn"",
+                    ""type"": ""Button"",
+                    ""id"": ""96c65084-c109-4576-b4a8-2d9839c71a32"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -132,6 +141,17 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""action"": ""Spawn"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c1bd7ed7-450c-494d-a5cb-4f346fc1919c"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Despawn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -171,6 +191,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         m_Ghost_Move = m_Ghost.FindAction("Move", throwIfNotFound: true);
         m_Ghost_Look = m_Ghost.FindAction("Look", throwIfNotFound: true);
         m_Ghost_Spawn = m_Ghost.FindAction("Spawn", throwIfNotFound: true);
+        m_Ghost_Despawn = m_Ghost.FindAction("Despawn", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_EnableDisable = m_UI.FindAction("EnableDisable", throwIfNotFound: true);
@@ -244,6 +265,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_Ghost_Move;
     private readonly InputAction m_Ghost_Look;
     private readonly InputAction m_Ghost_Spawn;
+    private readonly InputAction m_Ghost_Despawn;
     public struct GhostActions
     {
         private @UserInputActionAsset m_Wrapper;
@@ -251,6 +273,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Ghost_Move;
         public InputAction @Look => m_Wrapper.m_Ghost_Look;
         public InputAction @Spawn => m_Wrapper.m_Ghost_Spawn;
+        public InputAction @Despawn => m_Wrapper.m_Ghost_Despawn;
         public InputActionMap Get() { return m_Wrapper.m_Ghost; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -269,6 +292,9 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @Spawn.started += instance.OnSpawn;
             @Spawn.performed += instance.OnSpawn;
             @Spawn.canceled += instance.OnSpawn;
+            @Despawn.started += instance.OnDespawn;
+            @Despawn.performed += instance.OnDespawn;
+            @Despawn.canceled += instance.OnDespawn;
         }
 
         private void UnregisterCallbacks(IGhostActions instance)
@@ -282,6 +308,9 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @Spawn.started -= instance.OnSpawn;
             @Spawn.performed -= instance.OnSpawn;
             @Spawn.canceled -= instance.OnSpawn;
+            @Despawn.started -= instance.OnDespawn;
+            @Despawn.performed -= instance.OnDespawn;
+            @Despawn.canceled -= instance.OnDespawn;
         }
 
         public void RemoveCallbacks(IGhostActions instance)
@@ -350,6 +379,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnSpawn(InputAction.CallbackContext context);
+        void OnDespawn(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

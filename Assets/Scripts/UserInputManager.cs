@@ -9,7 +9,7 @@ public class UserInputManager : MonoBehaviour {
     public Vector2 moveInput;
     public Vector2 lookInput;
     public static UserInputManager Instance;
-
+    public event EventHandler removeEvent;
     public event EventHandler spawnEvent;
     public event EventHandler enableDisabled;
    
@@ -29,7 +29,7 @@ public class UserInputManager : MonoBehaviour {
         userInputActionAsset.Ghost.Look.performed += context => lookInput = context.ReadValue<Vector2>();
         userInputActionAsset.Ghost.Look.canceled += context => lookInput = Vector2.zero;
         userInputActionAsset.Ghost.Spawn.performed += context => spawnEvent?.Invoke(this, EventArgs.Empty);
-        
+        userInputActionAsset.Ghost.Despawn.performed += context => removeEvent?.Invoke(this, EventArgs.Empty);
         userInputActionAsset.UI.Enable();
         userInputActionAsset.UI.EnableDisable.performed += context => enableDisabled?.Invoke(this, EventArgs.Empty);
     }

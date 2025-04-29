@@ -333,13 +333,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 3510266925841736856, guid: 87b5cd629c562c94daf1220fb51ef99e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 17
           m_FloatArgument: 0
           m_StringArgument: 
@@ -761,13 +761,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 4656587561898104715, guid: bf2742f3e2eb30e429994b8b83646bda, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 24
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1085,7 +1085,7 @@ Transform:
   m_GameObject: {fileID: 221768056}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.22, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 22.441, y: 0.1516226, z: 30.442}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1634,7 +1634,7 @@ MonoBehaviour:
         m_MethodName: SpawnGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3565982824656612508, guid: 14a0d892d0ac7cb43878fd9af09616b7, type: 3}
+          m_ObjectArgument: {fileID: 919132149155446097, guid: 8707766e2f68ece4a8076b0bd7c35e5d, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 34
           m_FloatArgument: 0
@@ -1761,13 +1761,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1402987180648437759, guid: 3333c5c69ee9d934cad9ded2386607f4, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 13
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2418,7 +2418,7 @@ MonoBehaviour:
         m_MethodName: SpawnGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2892974264109735835, guid: 8a944e9eebc7e424f88bf75ab11baa83, type: 3}
+          m_ObjectArgument: {fileID: 1865512328034769243, guid: 04ffcededc128324390154945b9fbdb3, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 5
           m_FloatArgument: 0
@@ -2894,13 +2894,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 7630412084874528851, guid: 5a8a47b75ed674d4b942a84224489fe2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 26
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3336,13 +3336,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 4097195681898518206, guid: f4d286cd23d31ed4d9dd937cf40ee28a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 19
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4001,7 +4001,7 @@ MonoBehaviour:
         m_MethodName: SpawnGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 6079158039497786091, guid: e9ea81577858e1541b7c21b7857246b8, type: 3}
+          m_ObjectArgument: {fileID: 1865512328034769243, guid: 04ffcededc128324390154945b9fbdb3, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
@@ -4128,13 +4128,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5428863902262355051, guid: 2ab1d75e494f86e43abaa1b057cb2c5a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4178,137 +4178,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039839691}
   m_CullTransparentMesh: 1
---- !u!1 &1105758409
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1105758410}
-  - component: {fileID: 1105758413}
-  - component: {fileID: 1105758412}
-  - component: {fileID: 1105758411}
-  - component: {fileID: 1105758414}
-  m_Layer: 0
-  m_Name: floor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1105758410
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105758409}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0.37, z: 1}
-  m_LocalScale: {x: 10.396445, y: 0.26118615, z: 10.326754}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3857442534269525460}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1105758411
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105758409}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1105758412
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105758409}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1105758413
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105758409}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &1105758414
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105758409}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1116916680
 GameObject:
   m_ObjectHideFlags: 0
@@ -4396,7 +4265,7 @@ MonoBehaviour:
         m_MethodName: SpawnGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3273696046679217132, guid: ab64a6faa3935784e943c5bfd3b1d001, type: 3}
+          m_ObjectArgument: {fileID: 5334056431244488743, guid: 2695cac66b35b9949bb777832b8d8216, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 27
           m_FloatArgument: 0
@@ -4655,13 +4524,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 3659958703485543133, guid: f9b9b45713a486842822894864fd1ed5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4787,13 +4656,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 485184098687650637, guid: b78470e69f614224f91b4cdbfcfeb18b, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 23
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5194,13 +5063,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2626789710345399123, guid: 8f07e82a82168694a8b42709ca684afc, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 16
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5326,13 +5195,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 3379946177677407287, guid: deb95bd0e015a1b4abfd43926c1d809e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 21
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5590,13 +5459,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8532707636003781351, guid: 31d76f554d274c849b2d5ab6c1986539, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 15
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6206,13 +6075,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 6754979576642947120, guid: cee7de60bc184354a9b9b262df20ff2a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6470,13 +6339,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 6517710758528213071, guid: 69dec8d3813e50b41a5e390a0c9be25a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 14
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6602,13 +6471,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5478413392732748926, guid: 6839b1a6bd90bd34eac1c261fc4c45a2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 22
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7106,13 +6975,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1827137868022024592, guid: cf45ab83dbfdf7046968209969bc443e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 25
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7838,7 +7707,7 @@ MonoBehaviour:
         m_MethodName: SpawnGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 7614784325192936959, guid: dede53aaa12e5b545ad8d3d35e247c8e, type: 3}
+          m_ObjectArgument: {fileID: 3443481626832138323, guid: 045b4b9d812e18742b7a148a1bf2ab12, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 29
           m_FloatArgument: 0
@@ -8103,7 +7972,7 @@ MonoBehaviour:
         m_MethodName: SpawnGameObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3906667917503689607, guid: e119040fbaa903d48ac34a3c20290562, type: 3}
+          m_ObjectArgument: {fileID: 2242572781938974348, guid: 897845c6e7e1d454fb93506a5fc893b2, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 38
           m_FloatArgument: 0
@@ -8362,13 +8231,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FurnitureSpawner, Assembly-CSharp
-        m_MethodName: SpawnFurniture
-        m_Mode: 3
+      - m_Target: {fileID: 831735760}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SpawnGameObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 6862454167867638170, guid: 5a9b19ca7f3a56a489662779a8538274, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 18
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9903,7 +9772,6 @@ Transform:
   - {fileID: 2579552310854216977}
   - {fileID: 2559977367314022005}
   - {fileID: 6609046583257401410}
-  - {fileID: 1105758410}
   - {fileID: 221768057}
   m_Father: {fileID: 1478835872}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
