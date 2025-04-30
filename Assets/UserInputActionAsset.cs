@@ -62,6 +62,15 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Sprint"",
+                    ""type"": ""Button"",
+                    ""id"": ""8276b04e-121b-4a1d-96c4-915ccc6da608"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -152,6 +161,17 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""action"": ""Despawn"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f13eea71-4ca7-421c-a51e-2bffb69eaadd"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -163,6 +183,33 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""name"": ""EnableDisable"",
                     ""type"": ""Button"",
                     ""id"": ""0b09336e-c11c-4281-b8ad-1bd57ffa0153"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RotateX"",
+                    ""type"": ""Button"",
+                    ""id"": ""766ee7a1-3001-4dda-92fc-78be10e0c9fd"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RotateY"",
+                    ""type"": ""Button"",
+                    ""id"": ""3199dc31-6f76-41c0-9d87-3b7a91283fcb"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RotateZ"",
+                    ""type"": ""Button"",
+                    ""id"": ""2c4f933e-decd-4841-aa68-79cfa3dcc968"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -180,6 +227,39 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""action"": ""EnableDisable"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7fdef05d-d4e7-4b70-bb15-f19a3e9d6644"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotateX"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4f572d44-bcaa-4d22-82c5-ccd991022f76"",
+                    ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotateY"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4b499469-ef47-44ce-8023-f89c884309f8"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotateZ"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -192,9 +272,13 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         m_Ghost_Look = m_Ghost.FindAction("Look", throwIfNotFound: true);
         m_Ghost_Spawn = m_Ghost.FindAction("Spawn", throwIfNotFound: true);
         m_Ghost_Despawn = m_Ghost.FindAction("Despawn", throwIfNotFound: true);
+        m_Ghost_Sprint = m_Ghost.FindAction("Sprint", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_EnableDisable = m_UI.FindAction("EnableDisable", throwIfNotFound: true);
+        m_UI_RotateX = m_UI.FindAction("RotateX", throwIfNotFound: true);
+        m_UI_RotateY = m_UI.FindAction("RotateY", throwIfNotFound: true);
+        m_UI_RotateZ = m_UI.FindAction("RotateZ", throwIfNotFound: true);
     }
 
     ~@UserInputActionAsset()
@@ -266,6 +350,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_Ghost_Look;
     private readonly InputAction m_Ghost_Spawn;
     private readonly InputAction m_Ghost_Despawn;
+    private readonly InputAction m_Ghost_Sprint;
     public struct GhostActions
     {
         private @UserInputActionAsset m_Wrapper;
@@ -274,6 +359,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         public InputAction @Look => m_Wrapper.m_Ghost_Look;
         public InputAction @Spawn => m_Wrapper.m_Ghost_Spawn;
         public InputAction @Despawn => m_Wrapper.m_Ghost_Despawn;
+        public InputAction @Sprint => m_Wrapper.m_Ghost_Sprint;
         public InputActionMap Get() { return m_Wrapper.m_Ghost; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -295,6 +381,9 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @Despawn.started += instance.OnDespawn;
             @Despawn.performed += instance.OnDespawn;
             @Despawn.canceled += instance.OnDespawn;
+            @Sprint.started += instance.OnSprint;
+            @Sprint.performed += instance.OnSprint;
+            @Sprint.canceled += instance.OnSprint;
         }
 
         private void UnregisterCallbacks(IGhostActions instance)
@@ -311,6 +400,9 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @Despawn.started -= instance.OnDespawn;
             @Despawn.performed -= instance.OnDespawn;
             @Despawn.canceled -= instance.OnDespawn;
+            @Sprint.started -= instance.OnSprint;
+            @Sprint.performed -= instance.OnSprint;
+            @Sprint.canceled -= instance.OnSprint;
         }
 
         public void RemoveCallbacks(IGhostActions instance)
@@ -333,11 +425,17 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_UI;
     private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
     private readonly InputAction m_UI_EnableDisable;
+    private readonly InputAction m_UI_RotateX;
+    private readonly InputAction m_UI_RotateY;
+    private readonly InputAction m_UI_RotateZ;
     public struct UIActions
     {
         private @UserInputActionAsset m_Wrapper;
         public UIActions(@UserInputActionAsset wrapper) { m_Wrapper = wrapper; }
         public InputAction @EnableDisable => m_Wrapper.m_UI_EnableDisable;
+        public InputAction @RotateX => m_Wrapper.m_UI_RotateX;
+        public InputAction @RotateY => m_Wrapper.m_UI_RotateY;
+        public InputAction @RotateZ => m_Wrapper.m_UI_RotateZ;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -350,6 +448,15 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @EnableDisable.started += instance.OnEnableDisable;
             @EnableDisable.performed += instance.OnEnableDisable;
             @EnableDisable.canceled += instance.OnEnableDisable;
+            @RotateX.started += instance.OnRotateX;
+            @RotateX.performed += instance.OnRotateX;
+            @RotateX.canceled += instance.OnRotateX;
+            @RotateY.started += instance.OnRotateY;
+            @RotateY.performed += instance.OnRotateY;
+            @RotateY.canceled += instance.OnRotateY;
+            @RotateZ.started += instance.OnRotateZ;
+            @RotateZ.performed += instance.OnRotateZ;
+            @RotateZ.canceled += instance.OnRotateZ;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -357,6 +464,15 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @EnableDisable.started -= instance.OnEnableDisable;
             @EnableDisable.performed -= instance.OnEnableDisable;
             @EnableDisable.canceled -= instance.OnEnableDisable;
+            @RotateX.started -= instance.OnRotateX;
+            @RotateX.performed -= instance.OnRotateX;
+            @RotateX.canceled -= instance.OnRotateX;
+            @RotateY.started -= instance.OnRotateY;
+            @RotateY.performed -= instance.OnRotateY;
+            @RotateY.canceled -= instance.OnRotateY;
+            @RotateZ.started -= instance.OnRotateZ;
+            @RotateZ.performed -= instance.OnRotateZ;
+            @RotateZ.canceled -= instance.OnRotateZ;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -380,9 +496,13 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnSpawn(InputAction.CallbackContext context);
         void OnDespawn(InputAction.CallbackContext context);
+        void OnSprint(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
         void OnEnableDisable(InputAction.CallbackContext context);
+        void OnRotateX(InputAction.CallbackContext context);
+        void OnRotateY(InputAction.CallbackContext context);
+        void OnRotateZ(InputAction.CallbackContext context);
     }
 }

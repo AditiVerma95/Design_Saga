@@ -6,11 +6,10 @@ public class GhostModeController : MonoBehaviour {
     [SerializeField] public float sensitivity = 4f;
     private float xRotation = 0f; // up/down
     private float yRotation = 0f; // left/right
-    
+    [SerializeField] public float MoveSpeed = 6f;
     private void Start() {
         UserInputManager.Instance.spawnEvent += SpawnObject;
         UserInputManager.Instance.removeEvent += RemoveObject;
-        
     }
 
 
@@ -33,7 +32,7 @@ public class GhostModeController : MonoBehaviour {
         
         // Movement logic
         Vector3 moveDirection = camera.transform.right * move.x + camera.transform.forward * move.y;
-        transform.position += moveDirection * Time.deltaTime * sensitivity; // 5f is movement speed
+        transform.position += moveDirection * MoveSpeed * Time.deltaTime;
         
 
     }
@@ -44,7 +43,6 @@ public class GhostModeController : MonoBehaviour {
        
         if (Physics.Raycast(ray,  out RaycastHit hit, 50f)) {
             Debug.Log(hit.point);
-            Instantiate(UIManager.Instance.currentSelectedPrefab, hit.point, Quaternion.identity);
             GameObject spawned = Instantiate(UIManager.Instance.currentSelectedPrefab, hit.point, Quaternion.identity);
             spawned.tag = "SpawnedObject";
         }
@@ -55,6 +53,7 @@ public class GhostModeController : MonoBehaviour {
         if (Physics.Raycast(ray, out RaycastHit hit, 50f)) {
             // Optional: Only destroy objects with a specific tag to avoid deleting random scene stuff
             if (hit.collider.CompareTag("SpawnedObject")) {
+                Debug.Log(hit.collider.name);
                 Destroy(hit.collider.gameObject);
             }
         }
