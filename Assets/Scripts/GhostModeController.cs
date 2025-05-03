@@ -7,6 +7,8 @@ public class GhostModeController : MonoBehaviour {
     private float xRotation = 0f; // up/down
     private float yRotation = 0f; // left/right
     [SerializeField] public float MoveSpeed = 6f;
+    [SerializeField] public float sprintMultiplier = 2f;
+     
     private void Start() {
         UserInputManager.Instance.spawnEvent += SpawnObject;
         UserInputManager.Instance.removeEvent += RemoveObject;
@@ -28,13 +30,14 @@ public class GhostModeController : MonoBehaviour {
 
         // Apply rotation
         camera.transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
-        // Movement logic
         
         // Movement logic
-        Vector3 moveDirection = camera.transform.right * move.x + camera.transform.forward * move.y;
-        transform.position += moveDirection * MoveSpeed * Time.deltaTime;
-        
+        float currentSpeed = UserInputManager.Instance.isSprinting 
+            ? MoveSpeed * sprintMultiplier 
+            : MoveSpeed;
 
+        Vector3 moveDirection = camera.transform.right * move.x + camera.transform.forward * move.y;
+        GetComponent<Rigidbody>().MovePosition(transform.position + moveDirection * currentSpeed * Time.deltaTime);
     }
 
     private void SpawnObject(object sender, EventArgs e) {
