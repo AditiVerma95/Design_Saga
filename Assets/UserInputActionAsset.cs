@@ -71,6 +71,15 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Place"",
+                    ""type"": ""Button"",
+                    ""id"": ""ecbc8ac9-1997-427a-aa0b-82d58f46c409"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -170,6 +179,17 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dbf71f6b-f29b-4626-bb3a-e67ed38676f6"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Place"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -273,6 +293,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         m_Ghost_Spawn = m_Ghost.FindAction("Spawn", throwIfNotFound: true);
         m_Ghost_Despawn = m_Ghost.FindAction("Despawn", throwIfNotFound: true);
         m_Ghost_Sprint = m_Ghost.FindAction("Sprint", throwIfNotFound: true);
+        m_Ghost_Place = m_Ghost.FindAction("Place", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_EnableDisable = m_UI.FindAction("EnableDisable", throwIfNotFound: true);
@@ -351,6 +372,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_Ghost_Spawn;
     private readonly InputAction m_Ghost_Despawn;
     private readonly InputAction m_Ghost_Sprint;
+    private readonly InputAction m_Ghost_Place;
     public struct GhostActions
     {
         private @UserInputActionAsset m_Wrapper;
@@ -360,6 +382,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         public InputAction @Spawn => m_Wrapper.m_Ghost_Spawn;
         public InputAction @Despawn => m_Wrapper.m_Ghost_Despawn;
         public InputAction @Sprint => m_Wrapper.m_Ghost_Sprint;
+        public InputAction @Place => m_Wrapper.m_Ghost_Place;
         public InputActionMap Get() { return m_Wrapper.m_Ghost; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -384,6 +407,9 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
+            @Place.started += instance.OnPlace;
+            @Place.performed += instance.OnPlace;
+            @Place.canceled += instance.OnPlace;
         }
 
         private void UnregisterCallbacks(IGhostActions instance)
@@ -403,6 +429,9 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
+            @Place.started -= instance.OnPlace;
+            @Place.performed -= instance.OnPlace;
+            @Place.canceled -= instance.OnPlace;
         }
 
         public void RemoveCallbacks(IGhostActions instance)
@@ -497,6 +526,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         void OnSpawn(InputAction.CallbackContext context);
         void OnDespawn(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
+        void OnPlace(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
