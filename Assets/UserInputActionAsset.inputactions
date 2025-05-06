@@ -51,13 +51,13 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Place",
+                    "name": "OpenClose",
                     "type": "Button",
                     "id": "ecbc8ac9-1997-427a-aa0b-82d58f46c409",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -163,11 +163,11 @@
                 {
                     "name": "",
                     "id": "dbf71f6b-f29b-4626-bb3a-e67ed38676f6",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Place",
+                    "action": "OpenClose",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -185,33 +185,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "RotateX",
-                    "type": "Button",
-                    "id": "766ee7a1-3001-4dda-92fc-78be10e0c9fd",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "RotateY",
-                    "type": "Button",
-                    "id": "3199dc31-6f76-41c0-9d87-3b7a91283fcb",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "RotateZ",
-                    "type": "Button",
-                    "id": "2c4f933e-decd-4841-aa68-79cfa3dcc968",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -223,39 +196,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "EnableDisable",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7fdef05d-d4e7-4b70-bb15-f19a3e9d6644",
-                    "path": "<Keyboard>/j",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RotateX",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4f572d44-bcaa-4d22-82c5-ccd991022f76",
-                    "path": "<Keyboard>/k",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RotateY",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4b499469-ef47-44ce-8023-f89c884309f8",
-                    "path": "<Keyboard>/l",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RotateZ",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -9,9 +9,14 @@ public class UIManager : MonoBehaviour
    [SerializeField] private GameObject kitchenItems;
    [SerializeField] private GameObject livingRoomItems;
    [SerializeField] private GameObject bedroomItems;
-   [SerializeField] public GameObject currentSelectedPrefab = null;
+ 
    public static UIManager Instance;
-   
+   public (GameObject preview, GameObject prefab) currentSelected;
+
+   public void SetCurrentSelected(GameObject[] objects) {
+      currentSelected.preview = objects[0];
+      currentSelected.prefab = objects[1];
+   }
    private void Awake() {
       Instance = this;
    }
@@ -32,9 +37,7 @@ public class UIManager : MonoBehaviour
       }
    }
    
-   public void SpawnGameObject(GameObject prefab) {
-      currentSelectedPrefab = prefab;
-   }
+   
    
    private void OpenInventory()
    {

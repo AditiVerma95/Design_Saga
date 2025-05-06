@@ -14,6 +14,7 @@ public class UserInputManager : MonoBehaviour {
     public event EventHandler spawnEvent;
     public event EventHandler enableDisabled;
     public event EventHandler confirmPlaceEvent;
+    public event EventHandler OpenCloseEvent;
     
     private void Awake() {
         userInputActionAsset = new UserInputActionAsset();    
@@ -33,14 +34,16 @@ public class UserInputManager : MonoBehaviour {
         userInputActionAsset.Ghost.Look.canceled += context => lookInput = Vector2.zero;
 
         userInputActionAsset.Ghost.Spawn.performed += context => spawnEvent?.Invoke(this, EventArgs.Empty);
-        userInputActionAsset.Ghost.Sprint.performed += context => removeEvent?.Invoke(this, EventArgs.Empty);
-        userInputActionAsset.Ghost.Place.performed += context => confirmPlaceEvent?.Invoke(this, EventArgs.Empty); 
-
+        userInputActionAsset.Ghost.Despawn.performed += context => removeEvent?.Invoke(this, EventArgs.Empty);
+        
+        userInputActionAsset.Ghost.OpenClose.performed += context => OpenCloseEvent?.Invoke(this, EventArgs.Empty);
+        
         userInputActionAsset.Ghost.Sprint.performed += OnSprint;
         userInputActionAsset.Ghost.Sprint.canceled += OnSprint;
 
         userInputActionAsset.UI.Enable();
         userInputActionAsset.UI.EnableDisable.performed += context => enableDisabled?.Invoke(this, EventArgs.Empty);
+       
     }
 
 
@@ -48,7 +51,6 @@ public class UserInputManager : MonoBehaviour {
 
     private void OnDisable() {
         userInputActionAsset.Ghost.Disable();
-        
     }
     
     public void OnSprint(InputAction.CallbackContext context)

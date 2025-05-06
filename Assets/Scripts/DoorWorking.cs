@@ -6,10 +6,12 @@ public class DoorWorking : MonoBehaviour
 {
     private Animator animator;
     private bool isOpen = false;
+    private bool playerInRange = false;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        UserInputManager.Instance.OpenCloseEvent += TriggerDoor;
     }
 
     private void Update()
@@ -17,20 +19,24 @@ public class DoorWorking : MonoBehaviour
         
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
-        {
-            if (isOpen)
-            {
-                animator.SetBool("isOpen", false);
-                isOpen = false;
-            }
-            else
-            {
-                animator.SetBool("isOpen", true);
-                isOpen = true;
-            }
+    private void TriggerDoor(object sender, EventArgs e) {
+        if (!playerInRange) {
+            return;
         }
+
+        isOpen = !isOpen;
+        animator.SetBool("isOpen", isOpen);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+            playerInRange = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+            playerInRange = false;
+    }
+    
 }
