@@ -17,11 +17,13 @@ public class UserInputManager : MonoBehaviour {
     public event EventHandler OpenCloseEvent;
     
     private void Awake() {
+        Instance = this;
         userInputActionAsset = new UserInputActionAsset();    
+        
     }
 
     private void Start() {
-        Instance = this;
+        
     }
 
     private void OnEnable() {

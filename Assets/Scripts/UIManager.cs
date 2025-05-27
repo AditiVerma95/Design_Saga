@@ -9,14 +9,12 @@ public class UIManager : MonoBehaviour
    [SerializeField] private GameObject kitchenItems;
    [SerializeField] private GameObject livingRoomItems;
    [SerializeField] private GameObject bedroomItems;
+   [SerializeField] private GameObject Colours;
  
    public static UIManager Instance;
-   public (GameObject preview, GameObject prefab) currentSelected;
+   public GameObject[] currentSelectedPrefab;
 
-   public void SetCurrentSelected(GameObject[] objects) {
-      currentSelected.preview = objects[0];
-      currentSelected.prefab = objects[1];
-   }
+  
    private void Awake() {
       Instance = this;
    }
@@ -24,8 +22,18 @@ public class UIManager : MonoBehaviour
    private void Start() {
       
       UserInputManager.Instance.enableDisabled += OpenCloseInventory;
+      currentSelectedPrefab = new GameObject[2];
    }
 
+   public void SetPreviewObject(GameObject previewObject) {
+      Destroy(SpawnManager.Instance.previewObject);
+      SpawnManager.Instance.previewObject = null;
+      currentSelectedPrefab[0] = previewObject;
+      
+   }
+   public void SetSpawnObject(GameObject spawnObject) {
+      currentSelectedPrefab[1] = spawnObject;
+   }
    private void OpenCloseInventory(object sender, EventArgs e) {
       if (isInventoryOpen)
       {
@@ -37,7 +45,28 @@ public class UIManager : MonoBehaviour
       }
    }
    
-   
+   public void SetMaterialToSelectedPrefab(Material mat)
+   {
+      if (currentSelectedPrefab[1] == null)
+      {
+         Debug.LogWarning("No prefab selected.");
+         return;
+      }
+
+      Renderer renderer = currentSelectedPrefab[1].GetComponent<Renderer>();
+      if (renderer != null)
+      {
+         renderer.material = mat;
+      }
+      else
+      {
+         Debug.LogWarning("Selected prefab has no Renderer.");
+      }
+   }
+
+   //public void SpawnGameObject(GameObject prefab) {
+      //currentSelectedPrefab[1] = prefab;
+   //}
    
    private void OpenInventory()
    {
@@ -56,7 +85,8 @@ public class UIManager : MonoBehaviour
       Cursor.lockState = CursorLockMode.Locked;
       UserInputManager.Instance.userInputActionAsset.Ghost.Enable();
    }
-
+   
+   
    public void EnableKitchenItems()
    {
       DisableEverything();
@@ -74,11 +104,16 @@ public class UIManager : MonoBehaviour
       DisableEverything();
       bedroomItems.SetActive(true);
    }
-
+   public void EnableColours()
+   {
+      DisableEverything();
+      Colours.SetActive(true);
+   }
    private void DisableEverything()
    {
       kitchenItems.SetActive(false);
       livingRoomItems.SetActive(false);
       bedroomItems.SetActive(false);
+      Colours.SetActive(false);
    }
 }

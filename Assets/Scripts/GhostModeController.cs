@@ -7,7 +7,7 @@ public class GhostModeController : MonoBehaviour {
     [SerializeField] public float sensitivity = 4f;
     [SerializeField] public float MoveSpeed = 6f;
     [SerializeField] public float sprintMultiplier = 2f;
-
+    public static GhostModeController Instance;
     private float xRotation = 0f;
     private float yRotation = 0f;
     private Vector2 look;
@@ -15,8 +15,8 @@ public class GhostModeController : MonoBehaviour {
     private CharacterController controller;
 
     private void Start() {
+        Instance = this;
         
-        UserInputManager.Instance.removeEvent += RemoveObject;
         controller = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -48,8 +48,7 @@ public class GhostModeController : MonoBehaviour {
         Vector3 forward = camera.transform.forward;
         Vector3 right = camera.transform.right;
 
-        // Prevent flying movement
-        //forward.y = 0;
+        
         right.y = 0;
         forward.Normalize();
         right.Normalize();
@@ -57,17 +56,9 @@ public class GhostModeController : MonoBehaviour {
         Vector3 moveDir = (right * move.x + forward * move.y) * currentSpeed;
         controller.Move(moveDir * Time.fixedDeltaTime);
     }
-
     
 
-    private void RemoveObject(object sender, EventArgs e) {
-        Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
-        if (Physics.Raycast(ray, out RaycastHit hit, 50f)) {
-            if (hit.collider.CompareTag("SpawnedObject")) {
-                Debug.Log(hit.collider.name);
-                Destroy(hit.collider.gameObject);
-            }
-        }
-    }
+    
+    
 }
 

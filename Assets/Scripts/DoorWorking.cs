@@ -14,11 +14,6 @@ public class DoorWorking : MonoBehaviour
         UserInputManager.Instance.OpenCloseEvent += TriggerDoor;
     }
 
-    private void Update()
-    {
-        
-    }
-
     private void TriggerDoor(object sender, EventArgs e) {
         if (!playerInRange) {
             return;
