@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6004168027389535028}
   - component: {fileID: 7761795866964030589}
   - component: {fileID: 6223002541846418475}
-  - component: {fileID: 5264569107234959435}
   m_Layer: 0
   m_Name: Pouf_Blanket
   m_TagString: SpawnedObject
@@ -87,25 +86,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5264569107234959435
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3510266925841736856}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7379716867460858047, guid: 3ba2cbff77e36114db296d36b762d748, type: 3}

@@ -6,18 +6,31 @@ using UnityEngine.UIElements;
 
 public class SpawnManager : MonoBehaviour {
     public static SpawnManager Instance;
+    
+    // Used for raycasting
     [SerializeField] private Camera camera;
+    
+    // Preview object variables
     public GameObject previewObject = null;
     public LayerMask RayCastLayer;
     public LayerMask PreviewLayerobject;
+    
+    // Material variables
+    public Material currentMat;
+    public bool isSettingMaterial = false;
+    
+    
     private void OnEnable() {
         UserInputManager.Instance.spawnEvent += SpawnObject;
         UserInputManager.Instance.removeEvent += RemoveObject;
+        UserInputManager.Instance.ApplyMaterialToObject += SetSelectedMaterial;
     }
 
     private void OnDisable() {
         UserInputManager.Instance.spawnEvent -= SpawnObject;
         UserInputManager.Instance.removeEvent -= RemoveObject;
+        UserInputManager.Instance.ApplyMaterialToObject -= SetSelectedMaterial;
+
     }
 
     private void Awake() {
@@ -29,7 +42,10 @@ public class SpawnManager : MonoBehaviour {
     }
 
     private void PreviewSpawningObject() {
-        
+        if (isSettingMaterial) {
+            Destroy(previewObject);
+            return;
+        }
         if(UIManager.Instance.currentSelectedPrefab[0] == null) return;
         if (previewObject == null) {
             previewObject = Instantiate(UIManager.Instance.currentSelectedPrefab[0]);
@@ -43,7 +59,34 @@ public class SpawnManager : MonoBehaviour {
         }
         
     }
-    private void SpawnObject(object sender, EventArgs e) {
+    
+    public void SetSelectedMaterial(object sender, EventArgs e) {
+        if (!isSettingMaterial) return;
+        
+        if (Input.GetMouseButtonDown(0) && currentMat != null) {
+            Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
+            if (Physics.Raycast(ray, out RaycastHit hit)) {
+           
+                Renderer renderer = hit.collider.GetComponent<Renderer>();
+                if (renderer != null) {
+                    renderer.material = currentMat;
+                    var materials = renderer.materials;
+                    for (int i = 0; i < materials.Length; i++) {
+                        if (materials[i].name.Contains("Glass") || materials[i].shader.name.Contains("Transparent")) continue;
+                        materials[i] = currentMat;
+                    }
+                    renderer.materials = materials;
+
+
+                }
+            
+            }
+        }
+    }
+    
+    public void SpawnObject(object sender, EventArgs e) {
+        if(isSettingMaterial) return;
+        
         Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
         if (Physics.Raycast(ray, out RaycastHit hit, 50f)) {
             Debug.Log(hit.point);
@@ -51,7 +94,7 @@ public class SpawnManager : MonoBehaviour {
             spawned.tag = "SpawnedObject";
         }
     }
-    private void RemoveObject(object sender, EventArgs e) {
+    public void RemoveObject(object sender, EventArgs e) {
         Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
         if (Physics.Raycast(ray, out RaycastHit hit, 50f)) {
             if (hit.collider.CompareTag("SpawnedObject")) {

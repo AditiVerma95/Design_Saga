@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 589144746874986561}
   - component: {fileID: 2780672502864253388}
   - component: {fileID: 4730478182217854922}
-  - component: {fileID: 6886734427576547902}
   m_Layer: 0
   m_Name: Cabinets_P1
   m_TagString: SpawnedObject
@@ -89,25 +88,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6886734427576547902
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7105358629316934007}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2720991184812203913, guid: 718e6fe994a190f4da893119bdfd6427, type: 3}

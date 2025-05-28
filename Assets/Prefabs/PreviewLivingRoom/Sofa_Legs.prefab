@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6037585015278965986}
   - component: {fileID: 2737066614179669841}
   - component: {fileID: 2155647226590636384}
-  - component: {fileID: 4315503690384037295}
   m_Layer: 0
   m_Name: Sofa_Legs
   m_TagString: SpawnedObject
@@ -87,25 +86,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4315503690384037295
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874303023340403520}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -951557759273981876, guid: 3ba2cbff77e36114db296d36b762d748, type: 3}

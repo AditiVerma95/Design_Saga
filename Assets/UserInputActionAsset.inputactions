@@ -24,7 +24,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Spawn",
+                    "name": "LeftClick",
                     "type": "Button",
                     "id": "59ebe59a-7a84-4826-bfc2-b1d06b66743b",
                     "expectedControlType": "",
@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Despawn",
+                    "name": "RightClick",
                     "type": "Button",
                     "id": "96c65084-c109-4576-b4a8-2d9839c71a32",
                     "expectedControlType": "",
@@ -134,7 +134,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Spawn",
+                    "action": "LeftClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -145,7 +145,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Despawn",
+                    "action": "RightClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

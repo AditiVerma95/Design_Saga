@@ -46,7 +46,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Spawn"",
+                    ""name"": ""LeftClick"",
                     ""type"": ""Button"",
                     ""id"": ""59ebe59a-7a84-4826-bfc2-b1d06b66743b"",
                     ""expectedControlType"": """",
@@ -55,7 +55,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Despawn"",
+                    ""name"": ""RightClick"",
                     ""type"": ""Button"",
                     ""id"": ""96c65084-c109-4576-b4a8-2d9839c71a32"",
                     ""expectedControlType"": """",
@@ -156,7 +156,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Spawn"",
+                    ""action"": ""LeftClick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -167,7 +167,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Despawn"",
+                    ""action"": ""RightClick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -230,8 +230,8 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         m_Ghost = asset.FindActionMap("Ghost", throwIfNotFound: true);
         m_Ghost_Move = m_Ghost.FindAction("Move", throwIfNotFound: true);
         m_Ghost_Look = m_Ghost.FindAction("Look", throwIfNotFound: true);
-        m_Ghost_Spawn = m_Ghost.FindAction("Spawn", throwIfNotFound: true);
-        m_Ghost_Despawn = m_Ghost.FindAction("Despawn", throwIfNotFound: true);
+        m_Ghost_LeftClick = m_Ghost.FindAction("LeftClick", throwIfNotFound: true);
+        m_Ghost_RightClick = m_Ghost.FindAction("RightClick", throwIfNotFound: true);
         m_Ghost_Sprint = m_Ghost.FindAction("Sprint", throwIfNotFound: true);
         m_Ghost_OpenClose = m_Ghost.FindAction("OpenClose", throwIfNotFound: true);
         // UI
@@ -306,8 +306,8 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private List<IGhostActions> m_GhostActionsCallbackInterfaces = new List<IGhostActions>();
     private readonly InputAction m_Ghost_Move;
     private readonly InputAction m_Ghost_Look;
-    private readonly InputAction m_Ghost_Spawn;
-    private readonly InputAction m_Ghost_Despawn;
+    private readonly InputAction m_Ghost_LeftClick;
+    private readonly InputAction m_Ghost_RightClick;
     private readonly InputAction m_Ghost_Sprint;
     private readonly InputAction m_Ghost_OpenClose;
     public struct GhostActions
@@ -316,8 +316,8 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         public GhostActions(@UserInputActionAsset wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Ghost_Move;
         public InputAction @Look => m_Wrapper.m_Ghost_Look;
-        public InputAction @Spawn => m_Wrapper.m_Ghost_Spawn;
-        public InputAction @Despawn => m_Wrapper.m_Ghost_Despawn;
+        public InputAction @LeftClick => m_Wrapper.m_Ghost_LeftClick;
+        public InputAction @RightClick => m_Wrapper.m_Ghost_RightClick;
         public InputAction @Sprint => m_Wrapper.m_Ghost_Sprint;
         public InputAction @OpenClose => m_Wrapper.m_Ghost_OpenClose;
         public InputActionMap Get() { return m_Wrapper.m_Ghost; }
@@ -335,12 +335,12 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
-            @Spawn.started += instance.OnSpawn;
-            @Spawn.performed += instance.OnSpawn;
-            @Spawn.canceled += instance.OnSpawn;
-            @Despawn.started += instance.OnDespawn;
-            @Despawn.performed += instance.OnDespawn;
-            @Despawn.canceled += instance.OnDespawn;
+            @LeftClick.started += instance.OnLeftClick;
+            @LeftClick.performed += instance.OnLeftClick;
+            @LeftClick.canceled += instance.OnLeftClick;
+            @RightClick.started += instance.OnRightClick;
+            @RightClick.performed += instance.OnRightClick;
+            @RightClick.canceled += instance.OnRightClick;
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
@@ -357,12 +357,12 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
-            @Spawn.started -= instance.OnSpawn;
-            @Spawn.performed -= instance.OnSpawn;
-            @Spawn.canceled -= instance.OnSpawn;
-            @Despawn.started -= instance.OnDespawn;
-            @Despawn.performed -= instance.OnDespawn;
-            @Despawn.canceled -= instance.OnDespawn;
+            @LeftClick.started -= instance.OnLeftClick;
+            @LeftClick.performed -= instance.OnLeftClick;
+            @LeftClick.canceled -= instance.OnLeftClick;
+            @RightClick.started -= instance.OnRightClick;
+            @RightClick.performed -= instance.OnRightClick;
+            @RightClick.canceled -= instance.OnRightClick;
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
@@ -436,8 +436,8 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
-        void OnSpawn(InputAction.CallbackContext context);
-        void OnDespawn(InputAction.CallbackContext context);
+        void OnLeftClick(InputAction.CallbackContext context);
+        void OnRightClick(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
         void OnOpenClose(InputAction.CallbackContext context);
     }

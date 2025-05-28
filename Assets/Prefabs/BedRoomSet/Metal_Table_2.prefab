@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1766509213788122409}
   - component: {fileID: 701946727995270964}
   - component: {fileID: 8851142903912618757}
-  - component: {fileID: 6871573798047014304}
+  - component: {fileID: -7445462010999939805}
   m_Layer: 0
   m_Name: Metal_Table_2
   m_TagString: SpawnedObject
@@ -87,7 +87,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6871573798047014304
+--- !u!64 &-7445462010999939805
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,6 +106,6 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1563375546619438957, guid: f4791225ec2777c40bd346468a63936c, type: 3}

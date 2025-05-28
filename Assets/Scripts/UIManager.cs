@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
    [SerializeField] private GameObject livingRoomItems;
    [SerializeField] private GameObject bedroomItems;
    [SerializeField] private GameObject Colours;
+   [SerializeField] private Camera camera;
  
    public static UIManager Instance;
    public GameObject[] currentSelectedPrefab;
@@ -19,8 +20,12 @@ public class UIManager : MonoBehaviour
       Instance = this;
    }
 
+   public void ApplyMaterial(Material material) {
+      SpawnManager.Instance.currentMat = material;
+      SpawnManager.Instance.isSettingMaterial = true;
+   }
+   
    private void Start() {
-      
       UserInputManager.Instance.enableDisabled += OpenCloseInventory;
       currentSelectedPrefab = new GameObject[2];
    }
@@ -31,9 +36,12 @@ public class UIManager : MonoBehaviour
       currentSelectedPrefab[0] = previewObject;
       
    }
+   
    public void SetSpawnObject(GameObject spawnObject) {
       currentSelectedPrefab[1] = spawnObject;
+      SpawnManager.Instance.isSettingMaterial = false;
    }
+   
    private void OpenCloseInventory(object sender, EventArgs e) {
       if (isInventoryOpen)
       {
@@ -44,34 +52,11 @@ public class UIManager : MonoBehaviour
          OpenInventory();
       }
    }
-   
-   public void SetMaterialToSelectedPrefab(Material mat)
-   {
-      if (currentSelectedPrefab[1] == null)
-      {
-         Debug.LogWarning("No prefab selected.");
-         return;
-      }
-
-      Renderer renderer = currentSelectedPrefab[1].GetComponent<Renderer>();
-      if (renderer != null)
-      {
-         renderer.material = mat;
-      }
-      else
-      {
-         Debug.LogWarning("Selected prefab has no Renderer.");
-      }
-   }
-
-   //public void SpawnGameObject(GameObject prefab) {
-      //currentSelectedPrefab[1] = prefab;
-   //}
+  
    
    private void OpenInventory()
    {
       inventoryPanel.SetActive(true);
-      //InputManager.Instance.playerInputAction.Player.Disable();
       isInventoryOpen = true;
       Cursor.lockState = CursorLockMode.None;
       UserInputManager.Instance.userInputActionAsset.Ghost.Disable();
@@ -80,7 +65,6 @@ public class UIManager : MonoBehaviour
    private void CloseInventory()
    {
       inventoryPanel.SetActive(false);
-      //InputManager.Instance.playerInputAction.Player.Enable();
       isInventoryOpen = false;
       Cursor.lockState = CursorLockMode.Locked;
       UserInputManager.Instance.userInputActionAsset.Ghost.Enable();
