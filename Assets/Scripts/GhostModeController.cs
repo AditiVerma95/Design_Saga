@@ -4,13 +4,13 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class GhostModeController : MonoBehaviour {
     [SerializeField] private Camera camera;
-    [SerializeField] public float sensitivity = 4f;
+    //[SerializeField] public float sensitivity = 4f;
     [SerializeField] public float MoveSpeed = 6f;
     [SerializeField] public float sprintMultiplier = 2f;
     public static GhostModeController Instance;
-    private float xRotation = 0f;
-    private float yRotation = 0f;
-    private Vector2 look;
+    //private float xRotation = 0f;
+    //private float yRotation = 0f;
+    //private Vector2 look;
     private Vector2 move;
     private CharacterController controller;
 
@@ -18,25 +18,25 @@ public class GhostModeController : MonoBehaviour {
         Instance = this;
         
         controller = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update() {
         // Handle input
-        look = UserInputManager.Instance.lookInput;
+        //look = UserInputManager.Instance.lookInput;
         move = UserInputManager.Instance.moveInput;
 
-        // Mouse rotation
-        float mouseX = look.x * sensitivity * Time.deltaTime;
-        float mouseY = look.y * sensitivity * Time.deltaTime;
-
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        yRotation += mouseX;
+        // // Mouse rotation
+        // float mouseX = look.x * sensitivity * Time.deltaTime;
+        // float mouseY = look.y * sensitivity * Time.deltaTime;
+        //
+        // xRotation -= mouseY;
+        // xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        // yRotation += mouseX;
 
         // Apply camera and body rotation
-        camera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
+        //camera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        transform.localRotation = Quaternion.Euler(0f, camera.transform.rotation.y, 0f);
     }
 
     void FixedUpdate() {
