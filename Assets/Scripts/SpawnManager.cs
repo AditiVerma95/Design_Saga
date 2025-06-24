@@ -13,8 +13,9 @@ public class SpawnManager : MonoBehaviour {
     // Preview object variables
     public GameObject previewObject = null;
     public LayerMask RayCastLayer;
-    public LayerMask PreviewLayerobject;
-    
+    //public LayerMask PreviewLayerobject;
+    [SerializeField] private Transform rightHandController; // Assign this in the Inspector
+
     // Material variables
     public Material currentMat;
     public bool isSettingMaterial = false;
@@ -50,7 +51,8 @@ public class SpawnManager : MonoBehaviour {
         if (previewObject == null) {
             previewObject = Instantiate(UIManager.Instance.currentSelectedPrefab[0]);
         }
-        Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
+        Ray ray = new Ray(rightHandController.position, rightHandController.forward);
+
         if (Physics.Raycast(ray, out RaycastHit hit, 50f, RayCastLayer)) {
             previewObject.transform.position = hit.point;
             previewObject.transform.rotation = Quaternion.identity;
@@ -64,7 +66,8 @@ public class SpawnManager : MonoBehaviour {
         if (!isSettingMaterial) return;
         
         if (Input.GetMouseButtonDown(0) && currentMat != null) {
-            Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
+            Ray ray = new Ray(rightHandController.position, rightHandController.forward);
+
             if (Physics.Raycast(ray, out RaycastHit hit)) {
            
                 Renderer renderer = hit.collider.GetComponent<Renderer>();
@@ -87,7 +90,8 @@ public class SpawnManager : MonoBehaviour {
     public void SpawnObject(object sender, EventArgs e) {
         if(isSettingMaterial) return;
         
-        Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
+        Ray ray = new Ray(rightHandController.position, rightHandController.forward);
+
         if (Physics.Raycast(ray, out RaycastHit hit, 50f)) {
             Debug.Log(hit.point);
             GameObject spawned = Instantiate(UIManager.Instance.currentSelectedPrefab[1], hit.point, Quaternion.identity);
@@ -95,7 +99,7 @@ public class SpawnManager : MonoBehaviour {
         }
     }
     public void RemoveObject(object sender, EventArgs e) {
-        Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
+        Ray ray = new Ray(rightHandController.position, rightHandController.forward);
         if (Physics.Raycast(ray, out RaycastHit hit, 50f)) {
             if (hit.collider.CompareTag("SpawnedObject")) {
                 Debug.Log(hit.collider.name);
