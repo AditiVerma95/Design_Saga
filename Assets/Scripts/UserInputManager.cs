@@ -53,6 +53,7 @@ public class UserInputManager : MonoBehaviour {
     }
 
     private void LeftClickOnperformed(InputAction.CallbackContext obj) {
+        
         spawnEvent?.Invoke(this, EventArgs.Empty);
         ApplyMaterialToObject?.Invoke(this, EventArgs.Empty);
     }

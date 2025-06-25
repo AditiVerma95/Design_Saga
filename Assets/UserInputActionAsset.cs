@@ -2372,8 +2372,30 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""31df51f3-b5d7-4bf5-b2c6-e7d5bb42baac"",
+                    ""path"": ""<XRController>{RightHand}/primaryButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""c1bd7ed7-450c-494d-a5cb-4f346fc1919c"",
                     ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e45d3516-d5d7-4b79-8036-d98091ab4e5f"",
+                    ""path"": ""<XRController>{RightHand}/secondaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -2424,6 +2446,17 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""7597b5ca-794e-4c66-a409-b60081b5f71e"",
                     ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EnableDisable"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""23922ae1-700f-4318-a0ff-8fde5956ed8a"",
+                    ""path"": ""<XRController>{LeftHand}/primaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

@@ -22,6 +22,7 @@ public class SpawnManager : MonoBehaviour {
     
     
     private void OnEnable() {
+        Debug.Log(UserInputManager.Instance);
         UserInputManager.Instance.spawnEvent += SpawnObject;
         UserInputManager.Instance.removeEvent += RemoveObject;
         UserInputManager.Instance.ApplyMaterialToObject += SetSelectedMaterial;
@@ -57,7 +58,7 @@ public class SpawnManager : MonoBehaviour {
             previewObject.transform.position = hit.point;
             previewObject.transform.rotation = Quaternion.identity;
             previewObject.layer = 6;
-            Debug.Log(hit.collider.name);
+            
         }
         
     }
@@ -91,7 +92,7 @@ public class SpawnManager : MonoBehaviour {
         if(isSettingMaterial) return;
         
         Ray ray = new Ray(rightHandController.position, rightHandController.forward);
-
+        Debug.Log("wa");
         if (Physics.Raycast(ray, out RaycastHit hit, 50f)) {
             Debug.Log(hit.point);
             GameObject spawned = Instantiate(UIManager.Instance.currentSelectedPrefab[1], hit.point, Quaternion.identity);

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class UIManager : MonoBehaviour
    [SerializeField] private GameObject bedroomItems;
    [SerializeField] private GameObject Colours;
    [SerializeField] private Camera camera;
+
+   private Button lastActiveButton;
  
    public static UIManager Instance;
    public GameObject[] currentSelectedPrefab;
@@ -52,7 +55,6 @@ public class UIManager : MonoBehaviour
          OpenInventory();
       }
    }
-  
    
    private void OpenInventory()
    {
@@ -71,30 +73,38 @@ public class UIManager : MonoBehaviour
    }
    
    
-   public void EnableKitchenItems()
+   public void EnableKitchenItems(Button kitchenButton)
    {
       DisableEverything();
       kitchenItems.SetActive(true);
+      kitchenButton.interactable = false;
+      lastActiveButton = kitchenButton;
    }
    
-   public void EnableLivingRoomItems()
+   public void EnableLivingRoomItems(Button livingRoomButton)
    {
       DisableEverything();
       livingRoomItems.SetActive(true);
+      livingRoomButton.interactable = false;
+      lastActiveButton = livingRoomButton;
    }
    
-   public void EnableBedroomItems()
+   public void EnableBedroomItems(Button bedroomButton)
    {
       DisableEverything();
       bedroomItems.SetActive(true);
+      bedroomButton.interactable = false;
+      lastActiveButton = bedroomButton;
    }
-   public void EnableColours()
+   public void EnableColours(Button colorsButton)
    {
       DisableEverything();
       Colours.SetActive(true);
+      colorsButton.interactable = false;
+      lastActiveButton = colorsButton;
    }
-   private void DisableEverything()
-   {
+   private void DisableEverything() {
+      if(lastActiveButton != null) lastActiveButton.interactable = true;
       kitchenItems.SetActive(false);
       livingRoomItems.SetActive(false);
       bedroomItems.SetActive(false);
