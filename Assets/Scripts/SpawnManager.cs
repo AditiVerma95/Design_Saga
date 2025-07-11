@@ -12,8 +12,7 @@ public class SpawnManager : MonoBehaviour {
     
     // Preview object variables
     public GameObject previewObject = null;
-    public LayerMask RayCastLayer;
-    //public LayerMask PreviewLayerobject;
+    public LayerMask SpawnableLayer;
     [SerializeField] private Transform rightHandController; // Assign this in the Inspector
 
     // Material variables
@@ -54,11 +53,9 @@ public class SpawnManager : MonoBehaviour {
         }
         Ray ray = new Ray(rightHandController.position, rightHandController.forward);
 
-        if (Physics.Raycast(ray, out RaycastHit hit, 50f, RayCastLayer)) {
+        if (Physics.Raycast(ray, out RaycastHit hit, 50f, SpawnableLayer)) {
             previewObject.transform.position = hit.point;
             previewObject.transform.rotation = Quaternion.identity;
-            previewObject.layer = 6;
-            
         }
         
     }
@@ -90,15 +87,15 @@ public class SpawnManager : MonoBehaviour {
     
     public void SpawnObject(object sender, EventArgs e) {
         if(isSettingMaterial) return;
-        
+        if(UIManager.Instance.currentSelectedPrefab[1] == null) return;
         Ray ray = new Ray(rightHandController.position, rightHandController.forward);
-        Debug.Log("wa");
-        if (Physics.Raycast(ray, out RaycastHit hit, 50f)) {
+        if (Physics.Raycast(ray, out RaycastHit hit, 50f, SpawnableLayer)) {
             Debug.Log(hit.point);
             GameObject spawned = Instantiate(UIManager.Instance.currentSelectedPrefab[1], hit.point, Quaternion.identity);
             spawned.tag = "SpawnedObject";
         }
     }
+    
     public void RemoveObject(object sender, EventArgs e) {
         Ray ray = new Ray(rightHandController.position, rightHandController.forward);
         if (Physics.Raycast(ray, out RaycastHit hit, 50f)) {

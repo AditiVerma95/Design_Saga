@@ -1317,23 +1317,23 @@
                 },
                 {
                     "name": "",
-                    "id": "f96a0127-9cbb-476a-9657-55cca302b5b2",
-                    "path": "<XRController>{RightHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SetHeight",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "43b59e78-6033-4a09-8b3e-91233cd013f9",
                     "path": "<XRController>{RightHand}/thumbstick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "54847def-3e0b-4817-b138-f25742d91664",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetHeight",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
