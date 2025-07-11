@@ -73,60 +73,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Aim Position"",
-                    ""type"": ""Value"",
-                    ""id"": ""83ab8973-b274-478b-8503-7ed38ba39478"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Aim Rotation"",
-                    ""type"": ""Value"",
-                    ""id"": ""0fd85cfa-1d99-4c0d-80d7-39d117ebfdca"",
-                    ""expectedControlType"": ""Quaternion"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Meta Aim Flags"",
-                    ""type"": ""Value"",
-                    ""id"": ""250105f1-6962-4470-985c-88d4e2855ed3"",
-                    ""expectedControlType"": ""Integer"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Pinch Position"",
-                    ""type"": ""Value"",
-                    ""id"": ""ca471dd7-8671-4d7d-8ffd-73262b7bda42"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Poke Position"",
-                    ""type"": ""Value"",
-                    ""id"": ""570de91b-0268-4e61-ae20-65ec813754d5"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Poke Rotation"",
-                    ""type"": ""Value"",
-                    ""id"": ""2b83cd31-fca0-4b98-8c0a-08be3846b496"",
-                    ""expectedControlType"": ""Quaternion"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
                     ""name"": ""Thumbstick"",
                     ""type"": ""Value"",
                     ""id"": ""c171080c-afa5-4e3e-828f-69671eeab6ba"",
@@ -260,226 +206,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""8a76fdcb-70ee-40fa-942d-ccbdccd14afb"",
-                    ""path"": ""<MetaAimHand>{LeftHand}/devicePosition"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ac58103b-0a3a-4429-ab5e-cd762dc22234"",
-                    ""path"": ""<HandInteraction>{LeftHand}/pointer/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""67371558-00f2-450a-8c61-5a22495a76c5"",
-                    ""path"": ""<HandInteractionPoses>{LeftHand}/pointer/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""75ef7a46-f690-4511-bafb-71c7fefc27dd"",
-                    ""path"": ""<HoloLensHand>{LeftHand}/pointer/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""96c4e2c5-9cb4-4be9-b87f-c3a0f206c816"",
-                    ""path"": ""<MetaAimHand>{LeftHand}/deviceRotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""73aa7502-8e37-4a0d-8d2c-b6a42ec4ff3b"",
-                    ""path"": ""<HandInteraction>{LeftHand}/pointer/rotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""dae3d65a-1eb3-4711-8335-e43b2370da6b"",
-                    ""path"": ""<HandInteractionPoses>{LeftHand}/pointer/rotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ef5678d5-2160-40bb-b641-d5a9af6f74f2"",
-                    ""path"": ""<HoloLensHand>{LeftHand}/pointer/rotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""Vector 3 Fallback"",
-                    ""id"": ""3f8fc611-eb56-46af-b312-ad3db96cfe51"",
-                    ""path"": ""Vector3Fallback"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pinch Position"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""first"",
-                    ""id"": ""d492fd68-aec9-401e-af87-313a05044ce1"",
-                    ""path"": ""<XRHandDevice>{LeftHand}/pinchPosition"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pinch Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""second"",
-                    ""id"": ""67bced42-e3b8-4b8e-baac-12810fdd1ade"",
-                    ""path"": ""<HandInteraction>{LeftHand}/pinchPose/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pinch Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""third"",
-                    ""id"": ""1296db95-a9c2-4df1-a09e-7811cc30c2d0"",
-                    ""path"": ""<HandInteractionPoses>{LeftHand}/pinchPose/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pinch Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Vector 3 Fallback"",
-                    ""id"": ""a357ae88-a4ff-46f1-bbd8-df1abf3760ba"",
-                    ""path"": ""Vector3Fallback"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Position"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""first"",
-                    ""id"": ""b8049c29-0fb1-4671-b0e4-8082a048bb9f"",
-                    ""path"": ""<XRHandDevice>{LeftHand}/pokePosition"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""second"",
-                    ""id"": ""e5417105-43e4-4bb0-ba9f-535b597baaf2"",
-                    ""path"": ""<HandInteraction>{LeftHand}/pokePose/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""third"",
-                    ""id"": ""a385c74d-96be-47dd-b58a-7f4e2aa2ea31"",
-                    ""path"": ""<HandInteractionPoses>{LeftHand}/pokePose/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Quaternion Fallback"",
-                    ""id"": ""f50c7a0a-7e3e-45a4-a47e-3c366b51b2dd"",
-                    ""path"": ""QuaternionFallback"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Rotation"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""first"",
-                    ""id"": ""e17bb216-3e09-4d71-ab0f-fca2e7a70781"",
-                    ""path"": ""<XRHandDevice>{LeftHand}/pokeRotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""second"",
-                    ""id"": ""f6aa0be5-191c-4813-b531-737630901b16"",
-                    ""path"": ""<HandInteraction>{LeftHand}/pokePose/rotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""third"",
-                    ""id"": ""7022aceb-6c87-4628-a03a-c3a5ea4ae34a"",
-                    ""path"": ""<HandInteractionPoses>{LeftHand}/pokePose/rotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
                     ""id"": ""b99a7a6a-3c9b-4cfe-bf0a-bf943d5576fa"",
                     ""path"": ""<XRController>{LeftHand}/isTracked"",
                     ""interactions"": """",
@@ -497,17 +223,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Is Tracked"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4bf7e285-a882-48a7-9208-49714028aaa8"",
-                    ""path"": ""<MetaAimHand>{LeftHand}/aimFlags"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Meta Aim Flags"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -572,78 +287,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Aim Position"",
-                    ""type"": ""Value"",
-                    ""id"": ""4c8d3134-35d3-4452-850b-115793bee50b"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Aim Rotation"",
-                    ""type"": ""Value"",
-                    ""id"": ""b99ea5dd-8bf3-4e55-bdd5-b79b5d08c2d7"",
-                    ""expectedControlType"": ""Quaternion"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Meta Aim Flags"",
-                    ""type"": ""Value"",
-                    ""id"": ""22206a61-8cd1-45fe-be26-ada5c2ffeb87"",
-                    ""expectedControlType"": ""Integer"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Pinch Position"",
-                    ""type"": ""Value"",
-                    ""id"": ""29bfacdb-e47c-40da-80fe-7829134b6c9d"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Poke Position"",
-                    ""type"": ""Value"",
-                    ""id"": ""2460b06c-431e-47c2-abff-ee68fa2d54bc"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Poke Rotation"",
-                    ""type"": ""Value"",
-                    ""id"": ""286a6eea-efbf-4781-9e27-6d6a7c7761da"",
-                    ""expectedControlType"": ""Quaternion"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Grip Position"",
-                    ""type"": ""Value"",
-                    ""id"": ""aa95f925-24ee-4298-a387-0859aed0734c"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Grip Rotation"",
-                    ""type"": ""Value"",
-                    ""id"": ""d7680f38-dc38-4d63-aca5-cb03719fd328"",
-                    ""expectedControlType"": ""Quaternion"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Thumbstick"",
@@ -779,226 +422,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""116986ff-27b8-49e8-beaf-97c5b8a5ba92"",
-                    ""path"": ""<MetaAimHand>{RightHand}/devicePosition"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f07d01e2-a45e-472f-a854-74b899dbc60a"",
-                    ""path"": ""<HandInteraction>{RightHand}/pointer/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4559db21-b6d9-4845-b1df-36f21ee3755c"",
-                    ""path"": ""<HandInteractionPoses>{RightHand}/pointer/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""0ef88e39-7d79-41bd-b1c1-78b0d26e8c8d"",
-                    ""path"": ""<HoloLensHand>{RightHand}/pointer/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""0aee251e-f1b7-4130-9125-820aa9e0dff1"",
-                    ""path"": ""<MetaAimHand>{RightHand}/deviceRotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""64adebaa-83a7-4387-a333-97348c99a4f6"",
-                    ""path"": ""<HandInteraction>{RightHand}/pointer/rotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""28d22b73-73d5-4af4-87bf-8999b371f45a"",
-                    ""path"": ""<HandInteractionPoses>{RightHand}/pointer/rotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""cbc668b6-813c-487d-865a-afbdb6c577d4"",
-                    ""path"": ""<HoloLensHand>{RightHand}/pointer/rotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Aim Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""Vector 3 Fallback"",
-                    ""id"": ""626aef88-1e61-470d-b7a5-ba86156ab766"",
-                    ""path"": ""Vector3Fallback"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pinch Position"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""first"",
-                    ""id"": ""9833f94c-4b29-41eb-b1ff-6edc5bb1a86c"",
-                    ""path"": ""<XRHandDevice>{RightHand}/pinchPosition"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pinch Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""second"",
-                    ""id"": ""ee4523c5-1e9e-4f27-a914-8a74be2fb95d"",
-                    ""path"": ""<HandInteraction>{RightHand}/pinchPose/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pinch Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""third"",
-                    ""id"": ""c089ced1-49b6-4fd7-bd09-7b500ed903cc"",
-                    ""path"": ""<HandInteractionPoses>{RightHand}/pinchPose/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pinch Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Vector 3 Fallback"",
-                    ""id"": ""c22ec7c5-f07a-4476-8159-8dc2cba16cad"",
-                    ""path"": ""Vector3Fallback"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Position"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""first"",
-                    ""id"": ""39141133-f98d-4faf-81b2-66aa900f2841"",
-                    ""path"": ""<XRHandDevice>{RightHand}/pokePosition"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""second"",
-                    ""id"": ""4b475fd0-0453-408b-b95d-92379a55c704"",
-                    ""path"": ""<HandInteraction>{RightHand}/pokePose/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""third"",
-                    ""id"": ""51d6ebf5-5fb0-4b55-8b93-0e6cd004c974"",
-                    ""path"": ""<HandInteractionPoses>{RightHand}/pokePose/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Quaternion Fallback"",
-                    ""id"": ""7a081f4d-0525-4e59-a204-38cf35522393"",
-                    ""path"": ""QuaternionFallback"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Rotation"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""first"",
-                    ""id"": ""483aae1b-4507-4f49-a505-d149361bb55a"",
-                    ""path"": ""<XRHandDevice>{RightHand}/pokeRotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""second"",
-                    ""id"": ""c09f8bc7-7195-4ce9-b4fc-482faa97c616"",
-                    ""path"": ""<HandInteraction>{RightHand}/pokePose/rotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""third"",
-                    ""id"": ""3100e3e5-9093-4e8c-ac41-a5bf2235c7fd"",
-                    ""path"": ""<HandInteractionPoses>{RightHand}/pokePose/rotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Poke Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
                     ""id"": ""4a9ec537-a048-4ec7-886f-a8c787f207d1"",
                     ""path"": ""<XRController>{RightHand}/isTracked"",
                     ""interactions"": """",
@@ -1021,301 +444,12 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""4c05faf0-b594-4229-8e1a-1072cb686937"",
-                    ""path"": ""<MetaAimHand>{RightHand}/aimFlags"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Meta Aim Flags"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""34dae4cb-1064-4e0b-b04b-346c4cd45ff1"",
-                    ""path"": ""<XRHandDevice>{RightHand}/gripPosition"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Grip Position"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""fb575e09-73fc-4432-9b7c-84a2428ad5ae"",
-                    ""path"": ""<XRHandDevice>{RightHand}/gripRotation"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Grip Rotation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""8d582280-8ffc-4b92-837d-1003b25a3d44"",
                     ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Thumbstick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""XRI Left Locomotion"",
-            ""id"": ""04bf57bd-245c-490f-9ff5-d0a885eef1a2"",
-            ""actions"": [
-                {
-                    ""name"": ""Teleport Mode"",
-                    ""type"": ""Value"",
-                    ""id"": ""6df40135-785b-4021-bdd9-0844d5e51a4f"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Teleport Mode Cancel"",
-                    ""type"": ""Button"",
-                    ""id"": ""7fc8ed8b-2132-4a7f-941a-df4d3af2c7d7"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Turn"",
-                    ""type"": ""Value"",
-                    ""id"": ""50af149d-ee71-4b5d-880f-b633481e8627"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Snap Turn"",
-                    ""type"": ""Value"",
-                    ""id"": ""1a81b4d4-8eb8-4428-9292-5f746cb50750"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Move"",
-                    ""type"": ""Value"",
-                    ""id"": ""7c3c8713-d5a4-4081-8b91-bf8bee56c98f"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Grab Move"",
-                    ""type"": ""Button"",
-                    ""id"": ""c55b5712-f20e-4cc3-91f1-e7628408e5c6"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""6053650b-1937-49df-8725-b97259eaaa72"",
-                    ""path"": ""<XRController>{LeftHand}/{Primary2DAxis}"",
-                    ""interactions"": ""Sector(directions=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Teleport Mode"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""443ec766-f987-4463-9c04-052fd7396c65"",
-                    ""path"": ""<XRController>{LeftHand}/{GripButton}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Teleport Mode Cancel"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""864ee468-ddb2-4e07-9424-7d457114b84b"",
-                    ""path"": ""<XRController>{LeftHand}/{Primary2DAxis}"",
-                    ""interactions"": ""Sector(directions=12,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Turn"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f30ab3c0-beea-4300-9414-c0b225617a1c"",
-                    ""path"": ""<XRController>{LeftHand}/{Primary2DAxis}"",
-                    ""interactions"": """",
-                    ""processors"": ""StickDeadzone"",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""cedd136c-fbe8-4fdb-a417-02e75720ba52"",
-                    ""path"": ""<XRController>{LeftHand}/{GripButton}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Grab Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a163c263-129d-4b29-91ad-dc0b99125823"",
-                    ""path"": ""<XRController>{LeftHand}/{Primary2DAxis}"",
-                    ""interactions"": ""Sector(directions=12,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Snap Turn"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""XRI Right Locomotion"",
-            ""id"": ""786b33ac-99b7-475f-bcd8-15a486995a1a"",
-            ""actions"": [
-                {
-                    ""name"": ""Teleport Mode"",
-                    ""type"": ""Value"",
-                    ""id"": ""11ae2b12-e69a-4cd1-bd24-76e30c4853c7"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Teleport Mode Cancel"",
-                    ""type"": ""Button"",
-                    ""id"": ""32496c3b-b12a-4b2d-9bd9-7f47bbdefaa2"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Turn"",
-                    ""type"": ""Value"",
-                    ""id"": ""bab18b38-eecc-4a25-8fe5-33b449d35e8c"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Snap Turn"",
-                    ""type"": ""Value"",
-                    ""id"": ""04582d09-da02-43b4-85d3-0cbd538e1513"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Move"",
-                    ""type"": ""Value"",
-                    ""id"": ""a83ce191-2f8c-46f7-8777-01071c07efe9"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Grab Move"",
-                    ""type"": ""Button"",
-                    ""id"": ""cb0f6a22-1a3c-458e-a534-92e18d49613b"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""e0df06a6-4a58-4254-928f-06074c5eb828"",
-                    ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
-                    ""interactions"": ""Sector(directions=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Teleport Mode"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""17b59eca-7ecc-4154-969c-be95d2646406"",
-                    ""path"": ""<XRController>{RightHand}/{GripButton}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Teleport Mode Cancel"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""57657fc0-788f-4caf-aa62-eacf3a04ced5"",
-                    ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
-                    ""interactions"": ""Sector(directions=12,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Turn"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""aacecc65-c42b-426e-afd5-e23f43a7960f"",
-                    ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
-                    ""interactions"": """",
-                    ""processors"": ""StickDeadzone"",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ff7fed97-7125-4087-9e06-1d721c909c8d"",
-                    ""path"": ""<XRController>{RightHand}/{GripButton}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Grab Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d6096d5b-45b0-460c-909e-19a648bdfc89"",
-                    ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
-                    ""interactions"": ""Sector(directions=12,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Snap Turn"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1385,51 +519,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""id"": ""3067c1f7-509c-4d88-8c9f-a96ae89881ee"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": ""InvertVector2(invertY=false)"",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Translate Manipulation"",
-                    ""type"": ""Value"",
-                    ""id"": ""81f316df-a9c6-4edc-9172-87280f031a57"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Rotate Manipulation"",
-                    ""type"": ""Value"",
-                    ""id"": ""ce49f50c-d98c-4b59-b232-a10fda7af67b"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Directional Manipulation"",
-                    ""type"": ""Value"",
-                    ""id"": ""39834791-7a7a-4e6d-bcc8-d2e6ebfe5ce8"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Scale Toggle"",
-                    ""type"": ""Button"",
-                    ""id"": ""b9bddea9-2c9d-4a53-a83a-82fe9536ab7b"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Scale Over Time"",
-                    ""type"": ""Value"",
-                    ""id"": ""72f4f2d9-9b34-4aa4-8a1c-6d256e1f04c0"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
                 }
@@ -1635,67 +724,12 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f18e140f-4d9e-44ed-84a0-c245d3b553ce"",
-                    ""path"": ""<XRController>{LeftHand}/{Primary2DAxis}"",
-                    ""interactions"": """",
-                    ""processors"": ""ScaleVector2(y=0),StickDeadzone"",
-                    ""groups"": """",
-                    ""action"": ""Rotate Manipulation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""dbd6616a-27a3-4534-b214-8fc5c838e30c"",
                     ""path"": ""<XRController>{LeftHand}/{Primary2DAxis}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""UI Scroll"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a8be2f44-ed01-4c8f-9aed-cdd4c6d67596"",
-                    ""path"": ""<XRController>{LeftHand}/{Primary2DAxisClick}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Scale Toggle"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5a506e1d-74f4-4445-88d6-2531cdd3e1c1"",
-                    ""path"": ""<XRController>{LeftHand}/{Primary2DAxis}"",
-                    ""interactions"": """",
-                    ""processors"": ""ScaleVector2(x=0),StickDeadzone"",
-                    ""groups"": """",
-                    ""action"": ""Scale Over Time"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""cae65cb1-dcad-4c09-9909-67779a3aa998"",
-                    ""path"": ""<XRController>{LeftHand}/{Primary2DAxis}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Directional Manipulation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""63f1231f-e8fa-42c6-bcf8-46fd7eafa80c"",
-                    ""path"": ""<XRController>{LeftHand}/{Primary2DAxis}"",
-                    ""interactions"": """",
-                    ""processors"": ""ScaleVector2(x=0),StickDeadzone"",
-                    ""groups"": """",
-                    ""action"": ""Translate Manipulation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1727,7 +761,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""name"": ""Activate"",
                     ""type"": ""Button"",
                     ""id"": ""819a798e-5d3e-45c6-96ee-605d6ba3e339"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -1767,60 +801,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""processors"": ""InvertVector2(invertY=false)"",
                     ""interactions"": """",
                     ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Translate Manipulation"",
-                    ""type"": ""Value"",
-                    ""id"": ""0f68d7c7-0dbe-45d2-b242-c3ee96f09d6a"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Rotate Manipulation"",
-                    ""type"": ""Value"",
-                    ""id"": ""c287c0f9-f227-4dab-a1aa-298fe49ace36"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Directional Manipulation"",
-                    ""type"": ""Value"",
-                    ""id"": ""0e63cc15-c593-47c3-aec7-b057ae60cdef"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Scale Toggle"",
-                    ""type"": ""Button"",
-                    ""id"": ""3e0c2173-b372-4d17-a442-91eb8ac8cde1"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Scale Over Time"",
-                    ""type"": ""Value"",
-                    ""id"": ""9177960d-ac75-40f4-8695-9fc7251b88ba"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""EnableDisable"",
-                    ""type"": ""Button"",
-                    ""id"": ""7ad045e8-a1ef-4603-80f1-0e3461005475"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -2046,78 +1026,12 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f9ecaa7a-24e5-4a53-9c7a-3cee65f9d1fb"",
-                    ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
-                    ""interactions"": """",
-                    ""processors"": ""ScaleVector2(y=0),StickDeadzone"",
-                    ""groups"": """",
-                    ""action"": ""Rotate Manipulation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""f2e809a1-fd9b-4f11-81e8-b6124bb53460"",
                     ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""UI Scroll"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""13a8bbf7-2938-4a9b-91ee-b5e9a839b711"",
-                    ""path"": ""<XRController>{RightHand}/{Primary2DAxisClick}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Scale Toggle"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f3523e51-6f5c-4161-b5b8-fcce81020f42"",
-                    ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
-                    ""interactions"": """",
-                    ""processors"": ""ScaleVector2(x=0),StickDeadzone"",
-                    ""groups"": """",
-                    ""action"": ""Scale Over Time"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""52b77c97-4feb-4f97-aff8-9ae1f067d674"",
-                    ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Directional Manipulation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""df436a18-7ae6-468f-9eb7-34726dc366ef"",
-                    ""path"": ""<XRController>{RightHand}/{Primary2DAxis}"",
-                    ""interactions"": """",
-                    ""processors"": ""ScaleVector2(x=0),StickDeadzone"",
-                    ""groups"": """",
-                    ""action"": ""Translate Manipulation"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""95947d67-7a6b-4609-8aa4-5962844ce287"",
-                    ""path"": ""<XRController>{RightHand}/secondaryButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""EnableDisable"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -2274,19 +1188,28 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Sprint"",
+                    ""name"": ""OpenClose"",
                     ""type"": ""Button"",
-                    ""id"": ""8276b04e-121b-4a1d-96c4-915ccc6da608"",
+                    ""id"": ""ecbc8ac9-1997-427a-aa0b-82d58f46c409"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""SetHeight"",
+                    ""type"": ""Button"",
+                    ""id"": ""989a711e-763a-41bd-ab52-ab1e33ba7e7f"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""OpenClose"",
-                    ""type"": ""Button"",
-                    ""id"": ""ecbc8ac9-1997-427a-aa0b-82d58f46c409"",
-                    ""expectedControlType"": """",
+                    ""name"": ""Rotate"",
+                    ""type"": ""Value"",
+                    ""id"": ""bb762c85-7c05-40a2-a792-bdecce404bf9"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -2405,23 +1328,34 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f13eea71-4ca7-421c-a51e-2bffb69eaadd"",
-                    ""path"": ""<Keyboard>/shift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Sprint"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""dbf71f6b-f29b-4626-bb3a-e67ed38676f6"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""OpenClose"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f96a0127-9cbb-476a-9657-55cca302b5b2"",
+                    ""path"": ""<XRController>{RightHand}/primaryButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SetHeight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""43b59e78-6033-4a09-8b3e-91233cd013f9"",
+                    ""path"": ""<XRController>{RightHand}/thumbstick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -2465,471 +1399,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
-        },
-        {
-            ""name"": ""XRI UI"",
-            ""id"": ""c51f2b17-2d0f-45b2-9ae4-c67f47fa20f4"",
-            ""actions"": [
-                {
-                    ""name"": ""Navigate"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""d2695cd3-14be-4368-9a3e-602808e6e3d9"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Submit"",
-                    ""type"": ""Button"",
-                    ""id"": ""086c1392-75c5-4189-a0bd-ff11236dc261"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Cancel"",
-                    ""type"": ""Button"",
-                    ""id"": ""d77e5680-67e3-4e77-9e0a-f29cdaade7e6"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Point"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""50d86c6e-2355-477e-baf5-d9ff385f7506"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Click"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""12d88945-6eb7-45cf-90fc-c4d739da8472"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""ScrollWheel"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""3c1adebb-41a6-4a54-8849-88007d81b608"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""MiddleClick"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""17fd3899-5fe1-44a6-83d1-995f0896a0e2"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""RightClick"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""8e3ef2ba-332d-4325-9024-3bf08c260f54"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""138c9cd7-9479-4b3b-a2ff-65d18409969d"",
-                    ""path"": ""<Mouse>/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Point"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ccd64eb2-a3d6-4c89-8fdb-c07236a975e6"",
-                    ""path"": ""<Pen>/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Point"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""58b39ae0-2966-4806-a73b-ac1bccf1ba5d"",
-                    ""path"": ""<Touchscreen>/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Point"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2ddc260e-396c-4eee-98eb-07a8f5e5262c"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Click"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8e13f004-acbf-46b2-8f20-159d486a5824"",
-                    ""path"": ""<Pen>/tip"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Click"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""9aa4ca99-6174-4baa-a5fc-a14dd2736912"",
-                    ""path"": ""<Mouse>/scroll"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""ScrollWheel"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b1b77d2b-8ff2-45c4-9482-1364743de1cc"",
-                    ""path"": ""<Mouse>/middleButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MiddleClick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b7fe8e5d-66f9-4b0d-bed2-e8bbb8b8f05b"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""RightClick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""Gamepad"",
-                    ""id"": ""b0e1b349-5a76-427d-b272-02894b939f1a"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""e491202d-7b83-40ee-a560-df6f3e6fee27"",
-                    ""path"": ""<Gamepad>/leftStick/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""e68f20e4-3b2b-4e78-8c5e-5384812b3e4f"",
-                    ""path"": ""<Gamepad>/rightStick/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""d6be6102-b14b-48b8-8ced-66ee49a294f1"",
-                    ""path"": ""<Gamepad>/leftStick/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""bf80ee3d-be6d-4afd-bddc-15b2bb58c60d"",
-                    ""path"": ""<Gamepad>/rightStick/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""64e3349c-71c0-478b-b085-d97153eaf2cd"",
-                    ""path"": ""<Gamepad>/leftStick/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""05cf9099-f441-44af-8113-94da4ccf6699"",
-                    ""path"": ""<Gamepad>/rightStick/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""d444dede-6dc3-436d-bf7a-fdcd00295a9e"",
-                    ""path"": ""<Gamepad>/leftStick/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""977ea2a5-6f45-4fdd-9567-0746828ac1a5"",
-                    ""path"": ""<Gamepad>/rightStick/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b0690ae4-e453-400f-9ce5-6e6c895c3732"",
-                    ""path"": ""<Gamepad>/dpad"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""Joystick"",
-                    ""id"": ""6da1bd29-e5be-4784-93b6-1fd486536bbf"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""29964b2f-354a-44f3-83f5-0ab0d97c82b9"",
-                    ""path"": ""<Joystick>/stick/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""fdc9af8d-bb0e-47e9-8d38-d344deeeee09"",
-                    ""path"": ""<Joystick>/stick/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""98dcd080-0dc7-410e-90f8-6d80fd2c4705"",
-                    ""path"": ""<Joystick>/stick/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""155771f4-e0c7-4cf9-944e-db501ca2b213"",
-                    ""path"": ""<Joystick>/stick/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Keyboard"",
-                    ""id"": ""3ced3bfb-8bc5-48f5-85f7-73c43987a3a5"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""356abdd5-c6d5-4700-9b57-df329ccf7e25"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""6a84bf3a-f71b-483a-920b-06a7bd49645e"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""9af3aa53-bf99-48ee-b154-138e847e3bac"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""8b2078ca-9708-4b46-b4e9-e0a36629b3ec"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""02556f09-c784-4f0e-a87d-65b49004f066"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""2caaa255-df3f-4c77-8447-feb0bb7a520e"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""dfffff2f-26b0-4c5b-b501-5c15a784cf69"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""65618de4-f67d-4841-9d21-7726bd3dfb87"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Navigate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d16b05bc-3d7e-41a6-9d3a-cbc14708a780"",
-                    ""path"": ""*/{Submit}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Submit"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c0ba4d9e-9bf3-4753-80a9-ecc6bda09a29"",
-                    ""path"": ""*/{Cancel}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Cancel"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d0365f9f-f174-4cae-9ac7-895c3b731887"",
-                    ""path"": ""<Touchscreen>/Press"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Click"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
         }
     ],
     ""controlSchemes"": []
@@ -2941,12 +1410,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         m_XRILeft_IsTracked = m_XRILeft.FindAction("Is Tracked", throwIfNotFound: true);
         m_XRILeft_TrackingState = m_XRILeft.FindAction("Tracking State", throwIfNotFound: true);
         m_XRILeft_HapticDevice = m_XRILeft.FindAction("Haptic Device", throwIfNotFound: true);
-        m_XRILeft_AimPosition = m_XRILeft.FindAction("Aim Position", throwIfNotFound: true);
-        m_XRILeft_AimRotation = m_XRILeft.FindAction("Aim Rotation", throwIfNotFound: true);
-        m_XRILeft_MetaAimFlags = m_XRILeft.FindAction("Meta Aim Flags", throwIfNotFound: true);
-        m_XRILeft_PinchPosition = m_XRILeft.FindAction("Pinch Position", throwIfNotFound: true);
-        m_XRILeft_PokePosition = m_XRILeft.FindAction("Poke Position", throwIfNotFound: true);
-        m_XRILeft_PokeRotation = m_XRILeft.FindAction("Poke Rotation", throwIfNotFound: true);
         m_XRILeft_Thumbstick = m_XRILeft.FindAction("Thumbstick", throwIfNotFound: true);
         // XRI Right
         m_XRIRight = asset.FindActionMap("XRI Right", throwIfNotFound: true);
@@ -2955,31 +1418,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         m_XRIRight_IsTracked = m_XRIRight.FindAction("Is Tracked", throwIfNotFound: true);
         m_XRIRight_TrackingState = m_XRIRight.FindAction("Tracking State", throwIfNotFound: true);
         m_XRIRight_HapticDevice = m_XRIRight.FindAction("Haptic Device", throwIfNotFound: true);
-        m_XRIRight_AimPosition = m_XRIRight.FindAction("Aim Position", throwIfNotFound: true);
-        m_XRIRight_AimRotation = m_XRIRight.FindAction("Aim Rotation", throwIfNotFound: true);
-        m_XRIRight_MetaAimFlags = m_XRIRight.FindAction("Meta Aim Flags", throwIfNotFound: true);
-        m_XRIRight_PinchPosition = m_XRIRight.FindAction("Pinch Position", throwIfNotFound: true);
-        m_XRIRight_PokePosition = m_XRIRight.FindAction("Poke Position", throwIfNotFound: true);
-        m_XRIRight_PokeRotation = m_XRIRight.FindAction("Poke Rotation", throwIfNotFound: true);
-        m_XRIRight_GripPosition = m_XRIRight.FindAction("Grip Position", throwIfNotFound: true);
-        m_XRIRight_GripRotation = m_XRIRight.FindAction("Grip Rotation", throwIfNotFound: true);
         m_XRIRight_Thumbstick = m_XRIRight.FindAction("Thumbstick", throwIfNotFound: true);
-        // XRI Left Locomotion
-        m_XRILeftLocomotion = asset.FindActionMap("XRI Left Locomotion", throwIfNotFound: true);
-        m_XRILeftLocomotion_TeleportMode = m_XRILeftLocomotion.FindAction("Teleport Mode", throwIfNotFound: true);
-        m_XRILeftLocomotion_TeleportModeCancel = m_XRILeftLocomotion.FindAction("Teleport Mode Cancel", throwIfNotFound: true);
-        m_XRILeftLocomotion_Turn = m_XRILeftLocomotion.FindAction("Turn", throwIfNotFound: true);
-        m_XRILeftLocomotion_SnapTurn = m_XRILeftLocomotion.FindAction("Snap Turn", throwIfNotFound: true);
-        m_XRILeftLocomotion_Move = m_XRILeftLocomotion.FindAction("Move", throwIfNotFound: true);
-        m_XRILeftLocomotion_GrabMove = m_XRILeftLocomotion.FindAction("Grab Move", throwIfNotFound: true);
-        // XRI Right Locomotion
-        m_XRIRightLocomotion = asset.FindActionMap("XRI Right Locomotion", throwIfNotFound: true);
-        m_XRIRightLocomotion_TeleportMode = m_XRIRightLocomotion.FindAction("Teleport Mode", throwIfNotFound: true);
-        m_XRIRightLocomotion_TeleportModeCancel = m_XRIRightLocomotion.FindAction("Teleport Mode Cancel", throwIfNotFound: true);
-        m_XRIRightLocomotion_Turn = m_XRIRightLocomotion.FindAction("Turn", throwIfNotFound: true);
-        m_XRIRightLocomotion_SnapTurn = m_XRIRightLocomotion.FindAction("Snap Turn", throwIfNotFound: true);
-        m_XRIRightLocomotion_Move = m_XRIRightLocomotion.FindAction("Move", throwIfNotFound: true);
-        m_XRIRightLocomotion_GrabMove = m_XRIRightLocomotion.FindAction("Grab Move", throwIfNotFound: true);
         // XRI Left Interaction
         m_XRILeftInteraction = asset.FindActionMap("XRI Left Interaction", throwIfNotFound: true);
         m_XRILeftInteraction_Select = m_XRILeftInteraction.FindAction("Select", throwIfNotFound: true);
@@ -2989,11 +1428,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         m_XRILeftInteraction_UIPress = m_XRILeftInteraction.FindAction("UI Press", throwIfNotFound: true);
         m_XRILeftInteraction_UIPressValue = m_XRILeftInteraction.FindAction("UI Press Value", throwIfNotFound: true);
         m_XRILeftInteraction_UIScroll = m_XRILeftInteraction.FindAction("UI Scroll", throwIfNotFound: true);
-        m_XRILeftInteraction_TranslateManipulation = m_XRILeftInteraction.FindAction("Translate Manipulation", throwIfNotFound: true);
-        m_XRILeftInteraction_RotateManipulation = m_XRILeftInteraction.FindAction("Rotate Manipulation", throwIfNotFound: true);
-        m_XRILeftInteraction_DirectionalManipulation = m_XRILeftInteraction.FindAction("Directional Manipulation", throwIfNotFound: true);
-        m_XRILeftInteraction_ScaleToggle = m_XRILeftInteraction.FindAction("Scale Toggle", throwIfNotFound: true);
-        m_XRILeftInteraction_ScaleOverTime = m_XRILeftInteraction.FindAction("Scale Over Time", throwIfNotFound: true);
         // XRI Right Interaction
         m_XRIRightInteraction = asset.FindActionMap("XRI Right Interaction", throwIfNotFound: true);
         m_XRIRightInteraction_Select = m_XRIRightInteraction.FindAction("Select", throwIfNotFound: true);
@@ -3003,12 +1437,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         m_XRIRightInteraction_UIPress = m_XRIRightInteraction.FindAction("UI Press", throwIfNotFound: true);
         m_XRIRightInteraction_UIPressValue = m_XRIRightInteraction.FindAction("UI Press Value", throwIfNotFound: true);
         m_XRIRightInteraction_UIScroll = m_XRIRightInteraction.FindAction("UI Scroll", throwIfNotFound: true);
-        m_XRIRightInteraction_TranslateManipulation = m_XRIRightInteraction.FindAction("Translate Manipulation", throwIfNotFound: true);
-        m_XRIRightInteraction_RotateManipulation = m_XRIRightInteraction.FindAction("Rotate Manipulation", throwIfNotFound: true);
-        m_XRIRightInteraction_DirectionalManipulation = m_XRIRightInteraction.FindAction("Directional Manipulation", throwIfNotFound: true);
-        m_XRIRightInteraction_ScaleToggle = m_XRIRightInteraction.FindAction("Scale Toggle", throwIfNotFound: true);
-        m_XRIRightInteraction_ScaleOverTime = m_XRIRightInteraction.FindAction("Scale Over Time", throwIfNotFound: true);
-        m_XRIRightInteraction_EnableDisable = m_XRIRightInteraction.FindAction("EnableDisable", throwIfNotFound: true);
         // XRI Head
         m_XRIHead = asset.FindActionMap("XRI Head", throwIfNotFound: true);
         m_XRIHead_Position = m_XRIHead.FindAction("Position", throwIfNotFound: true);
@@ -3021,35 +1449,23 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         m_Ghost_Look = m_Ghost.FindAction("Look", throwIfNotFound: true);
         m_Ghost_LeftClick = m_Ghost.FindAction("LeftClick", throwIfNotFound: true);
         m_Ghost_RightClick = m_Ghost.FindAction("RightClick", throwIfNotFound: true);
-        m_Ghost_Sprint = m_Ghost.FindAction("Sprint", throwIfNotFound: true);
         m_Ghost_OpenClose = m_Ghost.FindAction("OpenClose", throwIfNotFound: true);
+        m_Ghost_SetHeight = m_Ghost.FindAction("SetHeight", throwIfNotFound: true);
+        m_Ghost_Rotate = m_Ghost.FindAction("Rotate", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_EnableDisable = m_UI.FindAction("EnableDisable", throwIfNotFound: true);
-        // XRI UI
-        m_XRIUI = asset.FindActionMap("XRI UI", throwIfNotFound: true);
-        m_XRIUI_Navigate = m_XRIUI.FindAction("Navigate", throwIfNotFound: true);
-        m_XRIUI_Submit = m_XRIUI.FindAction("Submit", throwIfNotFound: true);
-        m_XRIUI_Cancel = m_XRIUI.FindAction("Cancel", throwIfNotFound: true);
-        m_XRIUI_Point = m_XRIUI.FindAction("Point", throwIfNotFound: true);
-        m_XRIUI_Click = m_XRIUI.FindAction("Click", throwIfNotFound: true);
-        m_XRIUI_ScrollWheel = m_XRIUI.FindAction("ScrollWheel", throwIfNotFound: true);
-        m_XRIUI_MiddleClick = m_XRIUI.FindAction("MiddleClick", throwIfNotFound: true);
-        m_XRIUI_RightClick = m_XRIUI.FindAction("RightClick", throwIfNotFound: true);
     }
 
     ~@UserInputActionAsset()
     {
         UnityEngine.Debug.Assert(!m_XRILeft.enabled, "This will cause a leak and performance issues, UserInputActionAsset.XRILeft.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_XRIRight.enabled, "This will cause a leak and performance issues, UserInputActionAsset.XRIRight.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_XRILeftLocomotion.enabled, "This will cause a leak and performance issues, UserInputActionAsset.XRILeftLocomotion.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_XRIRightLocomotion.enabled, "This will cause a leak and performance issues, UserInputActionAsset.XRIRightLocomotion.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_XRILeftInteraction.enabled, "This will cause a leak and performance issues, UserInputActionAsset.XRILeftInteraction.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_XRIRightInteraction.enabled, "This will cause a leak and performance issues, UserInputActionAsset.XRIRightInteraction.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_XRIHead.enabled, "This will cause a leak and performance issues, UserInputActionAsset.XRIHead.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_Ghost.enabled, "This will cause a leak and performance issues, UserInputActionAsset.Ghost.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, UserInputActionAsset.UI.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_XRIUI.enabled, "This will cause a leak and performance issues, UserInputActionAsset.XRIUI.Disable() has not been called.");
     }
 
     public void Dispose()
@@ -3116,12 +1532,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_XRILeft_IsTracked;
     private readonly InputAction m_XRILeft_TrackingState;
     private readonly InputAction m_XRILeft_HapticDevice;
-    private readonly InputAction m_XRILeft_AimPosition;
-    private readonly InputAction m_XRILeft_AimRotation;
-    private readonly InputAction m_XRILeft_MetaAimFlags;
-    private readonly InputAction m_XRILeft_PinchPosition;
-    private readonly InputAction m_XRILeft_PokePosition;
-    private readonly InputAction m_XRILeft_PokeRotation;
     private readonly InputAction m_XRILeft_Thumbstick;
     public struct XRILeftActions
     {
@@ -3132,12 +1542,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         public InputAction @IsTracked => m_Wrapper.m_XRILeft_IsTracked;
         public InputAction @TrackingState => m_Wrapper.m_XRILeft_TrackingState;
         public InputAction @HapticDevice => m_Wrapper.m_XRILeft_HapticDevice;
-        public InputAction @AimPosition => m_Wrapper.m_XRILeft_AimPosition;
-        public InputAction @AimRotation => m_Wrapper.m_XRILeft_AimRotation;
-        public InputAction @MetaAimFlags => m_Wrapper.m_XRILeft_MetaAimFlags;
-        public InputAction @PinchPosition => m_Wrapper.m_XRILeft_PinchPosition;
-        public InputAction @PokePosition => m_Wrapper.m_XRILeft_PokePosition;
-        public InputAction @PokeRotation => m_Wrapper.m_XRILeft_PokeRotation;
         public InputAction @Thumbstick => m_Wrapper.m_XRILeft_Thumbstick;
         public InputActionMap Get() { return m_Wrapper.m_XRILeft; }
         public void Enable() { Get().Enable(); }
@@ -3163,24 +1567,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @HapticDevice.started += instance.OnHapticDevice;
             @HapticDevice.performed += instance.OnHapticDevice;
             @HapticDevice.canceled += instance.OnHapticDevice;
-            @AimPosition.started += instance.OnAimPosition;
-            @AimPosition.performed += instance.OnAimPosition;
-            @AimPosition.canceled += instance.OnAimPosition;
-            @AimRotation.started += instance.OnAimRotation;
-            @AimRotation.performed += instance.OnAimRotation;
-            @AimRotation.canceled += instance.OnAimRotation;
-            @MetaAimFlags.started += instance.OnMetaAimFlags;
-            @MetaAimFlags.performed += instance.OnMetaAimFlags;
-            @MetaAimFlags.canceled += instance.OnMetaAimFlags;
-            @PinchPosition.started += instance.OnPinchPosition;
-            @PinchPosition.performed += instance.OnPinchPosition;
-            @PinchPosition.canceled += instance.OnPinchPosition;
-            @PokePosition.started += instance.OnPokePosition;
-            @PokePosition.performed += instance.OnPokePosition;
-            @PokePosition.canceled += instance.OnPokePosition;
-            @PokeRotation.started += instance.OnPokeRotation;
-            @PokeRotation.performed += instance.OnPokeRotation;
-            @PokeRotation.canceled += instance.OnPokeRotation;
             @Thumbstick.started += instance.OnThumbstick;
             @Thumbstick.performed += instance.OnThumbstick;
             @Thumbstick.canceled += instance.OnThumbstick;
@@ -3203,24 +1589,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @HapticDevice.started -= instance.OnHapticDevice;
             @HapticDevice.performed -= instance.OnHapticDevice;
             @HapticDevice.canceled -= instance.OnHapticDevice;
-            @AimPosition.started -= instance.OnAimPosition;
-            @AimPosition.performed -= instance.OnAimPosition;
-            @AimPosition.canceled -= instance.OnAimPosition;
-            @AimRotation.started -= instance.OnAimRotation;
-            @AimRotation.performed -= instance.OnAimRotation;
-            @AimRotation.canceled -= instance.OnAimRotation;
-            @MetaAimFlags.started -= instance.OnMetaAimFlags;
-            @MetaAimFlags.performed -= instance.OnMetaAimFlags;
-            @MetaAimFlags.canceled -= instance.OnMetaAimFlags;
-            @PinchPosition.started -= instance.OnPinchPosition;
-            @PinchPosition.performed -= instance.OnPinchPosition;
-            @PinchPosition.canceled -= instance.OnPinchPosition;
-            @PokePosition.started -= instance.OnPokePosition;
-            @PokePosition.performed -= instance.OnPokePosition;
-            @PokePosition.canceled -= instance.OnPokePosition;
-            @PokeRotation.started -= instance.OnPokeRotation;
-            @PokeRotation.performed -= instance.OnPokeRotation;
-            @PokeRotation.canceled -= instance.OnPokeRotation;
             @Thumbstick.started -= instance.OnThumbstick;
             @Thumbstick.performed -= instance.OnThumbstick;
             @Thumbstick.canceled -= instance.OnThumbstick;
@@ -3250,14 +1618,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_XRIRight_IsTracked;
     private readonly InputAction m_XRIRight_TrackingState;
     private readonly InputAction m_XRIRight_HapticDevice;
-    private readonly InputAction m_XRIRight_AimPosition;
-    private readonly InputAction m_XRIRight_AimRotation;
-    private readonly InputAction m_XRIRight_MetaAimFlags;
-    private readonly InputAction m_XRIRight_PinchPosition;
-    private readonly InputAction m_XRIRight_PokePosition;
-    private readonly InputAction m_XRIRight_PokeRotation;
-    private readonly InputAction m_XRIRight_GripPosition;
-    private readonly InputAction m_XRIRight_GripRotation;
     private readonly InputAction m_XRIRight_Thumbstick;
     public struct XRIRightActions
     {
@@ -3268,14 +1628,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         public InputAction @IsTracked => m_Wrapper.m_XRIRight_IsTracked;
         public InputAction @TrackingState => m_Wrapper.m_XRIRight_TrackingState;
         public InputAction @HapticDevice => m_Wrapper.m_XRIRight_HapticDevice;
-        public InputAction @AimPosition => m_Wrapper.m_XRIRight_AimPosition;
-        public InputAction @AimRotation => m_Wrapper.m_XRIRight_AimRotation;
-        public InputAction @MetaAimFlags => m_Wrapper.m_XRIRight_MetaAimFlags;
-        public InputAction @PinchPosition => m_Wrapper.m_XRIRight_PinchPosition;
-        public InputAction @PokePosition => m_Wrapper.m_XRIRight_PokePosition;
-        public InputAction @PokeRotation => m_Wrapper.m_XRIRight_PokeRotation;
-        public InputAction @GripPosition => m_Wrapper.m_XRIRight_GripPosition;
-        public InputAction @GripRotation => m_Wrapper.m_XRIRight_GripRotation;
         public InputAction @Thumbstick => m_Wrapper.m_XRIRight_Thumbstick;
         public InputActionMap Get() { return m_Wrapper.m_XRIRight; }
         public void Enable() { Get().Enable(); }
@@ -3301,30 +1653,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @HapticDevice.started += instance.OnHapticDevice;
             @HapticDevice.performed += instance.OnHapticDevice;
             @HapticDevice.canceled += instance.OnHapticDevice;
-            @AimPosition.started += instance.OnAimPosition;
-            @AimPosition.performed += instance.OnAimPosition;
-            @AimPosition.canceled += instance.OnAimPosition;
-            @AimRotation.started += instance.OnAimRotation;
-            @AimRotation.performed += instance.OnAimRotation;
-            @AimRotation.canceled += instance.OnAimRotation;
-            @MetaAimFlags.started += instance.OnMetaAimFlags;
-            @MetaAimFlags.performed += instance.OnMetaAimFlags;
-            @MetaAimFlags.canceled += instance.OnMetaAimFlags;
-            @PinchPosition.started += instance.OnPinchPosition;
-            @PinchPosition.performed += instance.OnPinchPosition;
-            @PinchPosition.canceled += instance.OnPinchPosition;
-            @PokePosition.started += instance.OnPokePosition;
-            @PokePosition.performed += instance.OnPokePosition;
-            @PokePosition.canceled += instance.OnPokePosition;
-            @PokeRotation.started += instance.OnPokeRotation;
-            @PokeRotation.performed += instance.OnPokeRotation;
-            @PokeRotation.canceled += instance.OnPokeRotation;
-            @GripPosition.started += instance.OnGripPosition;
-            @GripPosition.performed += instance.OnGripPosition;
-            @GripPosition.canceled += instance.OnGripPosition;
-            @GripRotation.started += instance.OnGripRotation;
-            @GripRotation.performed += instance.OnGripRotation;
-            @GripRotation.canceled += instance.OnGripRotation;
             @Thumbstick.started += instance.OnThumbstick;
             @Thumbstick.performed += instance.OnThumbstick;
             @Thumbstick.canceled += instance.OnThumbstick;
@@ -3347,30 +1675,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @HapticDevice.started -= instance.OnHapticDevice;
             @HapticDevice.performed -= instance.OnHapticDevice;
             @HapticDevice.canceled -= instance.OnHapticDevice;
-            @AimPosition.started -= instance.OnAimPosition;
-            @AimPosition.performed -= instance.OnAimPosition;
-            @AimPosition.canceled -= instance.OnAimPosition;
-            @AimRotation.started -= instance.OnAimRotation;
-            @AimRotation.performed -= instance.OnAimRotation;
-            @AimRotation.canceled -= instance.OnAimRotation;
-            @MetaAimFlags.started -= instance.OnMetaAimFlags;
-            @MetaAimFlags.performed -= instance.OnMetaAimFlags;
-            @MetaAimFlags.canceled -= instance.OnMetaAimFlags;
-            @PinchPosition.started -= instance.OnPinchPosition;
-            @PinchPosition.performed -= instance.OnPinchPosition;
-            @PinchPosition.canceled -= instance.OnPinchPosition;
-            @PokePosition.started -= instance.OnPokePosition;
-            @PokePosition.performed -= instance.OnPokePosition;
-            @PokePosition.canceled -= instance.OnPokePosition;
-            @PokeRotation.started -= instance.OnPokeRotation;
-            @PokeRotation.performed -= instance.OnPokeRotation;
-            @PokeRotation.canceled -= instance.OnPokeRotation;
-            @GripPosition.started -= instance.OnGripPosition;
-            @GripPosition.performed -= instance.OnGripPosition;
-            @GripPosition.canceled -= instance.OnGripPosition;
-            @GripRotation.started -= instance.OnGripRotation;
-            @GripRotation.performed -= instance.OnGripRotation;
-            @GripRotation.canceled -= instance.OnGripRotation;
             @Thumbstick.started -= instance.OnThumbstick;
             @Thumbstick.performed -= instance.OnThumbstick;
             @Thumbstick.canceled -= instance.OnThumbstick;
@@ -3392,178 +1696,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     }
     public XRIRightActions @XRIRight => new XRIRightActions(this);
 
-    // XRI Left Locomotion
-    private readonly InputActionMap m_XRILeftLocomotion;
-    private List<IXRILeftLocomotionActions> m_XRILeftLocomotionActionsCallbackInterfaces = new List<IXRILeftLocomotionActions>();
-    private readonly InputAction m_XRILeftLocomotion_TeleportMode;
-    private readonly InputAction m_XRILeftLocomotion_TeleportModeCancel;
-    private readonly InputAction m_XRILeftLocomotion_Turn;
-    private readonly InputAction m_XRILeftLocomotion_SnapTurn;
-    private readonly InputAction m_XRILeftLocomotion_Move;
-    private readonly InputAction m_XRILeftLocomotion_GrabMove;
-    public struct XRILeftLocomotionActions
-    {
-        private @UserInputActionAsset m_Wrapper;
-        public XRILeftLocomotionActions(@UserInputActionAsset wrapper) { m_Wrapper = wrapper; }
-        public InputAction @TeleportMode => m_Wrapper.m_XRILeftLocomotion_TeleportMode;
-        public InputAction @TeleportModeCancel => m_Wrapper.m_XRILeftLocomotion_TeleportModeCancel;
-        public InputAction @Turn => m_Wrapper.m_XRILeftLocomotion_Turn;
-        public InputAction @SnapTurn => m_Wrapper.m_XRILeftLocomotion_SnapTurn;
-        public InputAction @Move => m_Wrapper.m_XRILeftLocomotion_Move;
-        public InputAction @GrabMove => m_Wrapper.m_XRILeftLocomotion_GrabMove;
-        public InputActionMap Get() { return m_Wrapper.m_XRILeftLocomotion; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(XRILeftLocomotionActions set) { return set.Get(); }
-        public void AddCallbacks(IXRILeftLocomotionActions instance)
-        {
-            if (instance == null || m_Wrapper.m_XRILeftLocomotionActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_XRILeftLocomotionActionsCallbackInterfaces.Add(instance);
-            @TeleportMode.started += instance.OnTeleportMode;
-            @TeleportMode.performed += instance.OnTeleportMode;
-            @TeleportMode.canceled += instance.OnTeleportMode;
-            @TeleportModeCancel.started += instance.OnTeleportModeCancel;
-            @TeleportModeCancel.performed += instance.OnTeleportModeCancel;
-            @TeleportModeCancel.canceled += instance.OnTeleportModeCancel;
-            @Turn.started += instance.OnTurn;
-            @Turn.performed += instance.OnTurn;
-            @Turn.canceled += instance.OnTurn;
-            @SnapTurn.started += instance.OnSnapTurn;
-            @SnapTurn.performed += instance.OnSnapTurn;
-            @SnapTurn.canceled += instance.OnSnapTurn;
-            @Move.started += instance.OnMove;
-            @Move.performed += instance.OnMove;
-            @Move.canceled += instance.OnMove;
-            @GrabMove.started += instance.OnGrabMove;
-            @GrabMove.performed += instance.OnGrabMove;
-            @GrabMove.canceled += instance.OnGrabMove;
-        }
-
-        private void UnregisterCallbacks(IXRILeftLocomotionActions instance)
-        {
-            @TeleportMode.started -= instance.OnTeleportMode;
-            @TeleportMode.performed -= instance.OnTeleportMode;
-            @TeleportMode.canceled -= instance.OnTeleportMode;
-            @TeleportModeCancel.started -= instance.OnTeleportModeCancel;
-            @TeleportModeCancel.performed -= instance.OnTeleportModeCancel;
-            @TeleportModeCancel.canceled -= instance.OnTeleportModeCancel;
-            @Turn.started -= instance.OnTurn;
-            @Turn.performed -= instance.OnTurn;
-            @Turn.canceled -= instance.OnTurn;
-            @SnapTurn.started -= instance.OnSnapTurn;
-            @SnapTurn.performed -= instance.OnSnapTurn;
-            @SnapTurn.canceled -= instance.OnSnapTurn;
-            @Move.started -= instance.OnMove;
-            @Move.performed -= instance.OnMove;
-            @Move.canceled -= instance.OnMove;
-            @GrabMove.started -= instance.OnGrabMove;
-            @GrabMove.performed -= instance.OnGrabMove;
-            @GrabMove.canceled -= instance.OnGrabMove;
-        }
-
-        public void RemoveCallbacks(IXRILeftLocomotionActions instance)
-        {
-            if (m_Wrapper.m_XRILeftLocomotionActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IXRILeftLocomotionActions instance)
-        {
-            foreach (var item in m_Wrapper.m_XRILeftLocomotionActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_XRILeftLocomotionActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public XRILeftLocomotionActions @XRILeftLocomotion => new XRILeftLocomotionActions(this);
-
-    // XRI Right Locomotion
-    private readonly InputActionMap m_XRIRightLocomotion;
-    private List<IXRIRightLocomotionActions> m_XRIRightLocomotionActionsCallbackInterfaces = new List<IXRIRightLocomotionActions>();
-    private readonly InputAction m_XRIRightLocomotion_TeleportMode;
-    private readonly InputAction m_XRIRightLocomotion_TeleportModeCancel;
-    private readonly InputAction m_XRIRightLocomotion_Turn;
-    private readonly InputAction m_XRIRightLocomotion_SnapTurn;
-    private readonly InputAction m_XRIRightLocomotion_Move;
-    private readonly InputAction m_XRIRightLocomotion_GrabMove;
-    public struct XRIRightLocomotionActions
-    {
-        private @UserInputActionAsset m_Wrapper;
-        public XRIRightLocomotionActions(@UserInputActionAsset wrapper) { m_Wrapper = wrapper; }
-        public InputAction @TeleportMode => m_Wrapper.m_XRIRightLocomotion_TeleportMode;
-        public InputAction @TeleportModeCancel => m_Wrapper.m_XRIRightLocomotion_TeleportModeCancel;
-        public InputAction @Turn => m_Wrapper.m_XRIRightLocomotion_Turn;
-        public InputAction @SnapTurn => m_Wrapper.m_XRIRightLocomotion_SnapTurn;
-        public InputAction @Move => m_Wrapper.m_XRIRightLocomotion_Move;
-        public InputAction @GrabMove => m_Wrapper.m_XRIRightLocomotion_GrabMove;
-        public InputActionMap Get() { return m_Wrapper.m_XRIRightLocomotion; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(XRIRightLocomotionActions set) { return set.Get(); }
-        public void AddCallbacks(IXRIRightLocomotionActions instance)
-        {
-            if (instance == null || m_Wrapper.m_XRIRightLocomotionActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_XRIRightLocomotionActionsCallbackInterfaces.Add(instance);
-            @TeleportMode.started += instance.OnTeleportMode;
-            @TeleportMode.performed += instance.OnTeleportMode;
-            @TeleportMode.canceled += instance.OnTeleportMode;
-            @TeleportModeCancel.started += instance.OnTeleportModeCancel;
-            @TeleportModeCancel.performed += instance.OnTeleportModeCancel;
-            @TeleportModeCancel.canceled += instance.OnTeleportModeCancel;
-            @Turn.started += instance.OnTurn;
-            @Turn.performed += instance.OnTurn;
-            @Turn.canceled += instance.OnTurn;
-            @SnapTurn.started += instance.OnSnapTurn;
-            @SnapTurn.performed += instance.OnSnapTurn;
-            @SnapTurn.canceled += instance.OnSnapTurn;
-            @Move.started += instance.OnMove;
-            @Move.performed += instance.OnMove;
-            @Move.canceled += instance.OnMove;
-            @GrabMove.started += instance.OnGrabMove;
-            @GrabMove.performed += instance.OnGrabMove;
-            @GrabMove.canceled += instance.OnGrabMove;
-        }
-
-        private void UnregisterCallbacks(IXRIRightLocomotionActions instance)
-        {
-            @TeleportMode.started -= instance.OnTeleportMode;
-            @TeleportMode.performed -= instance.OnTeleportMode;
-            @TeleportMode.canceled -= instance.OnTeleportMode;
-            @TeleportModeCancel.started -= instance.OnTeleportModeCancel;
-            @TeleportModeCancel.performed -= instance.OnTeleportModeCancel;
-            @TeleportModeCancel.canceled -= instance.OnTeleportModeCancel;
-            @Turn.started -= instance.OnTurn;
-            @Turn.performed -= instance.OnTurn;
-            @Turn.canceled -= instance.OnTurn;
-            @SnapTurn.started -= instance.OnSnapTurn;
-            @SnapTurn.performed -= instance.OnSnapTurn;
-            @SnapTurn.canceled -= instance.OnSnapTurn;
-            @Move.started -= instance.OnMove;
-            @Move.performed -= instance.OnMove;
-            @Move.canceled -= instance.OnMove;
-            @GrabMove.started -= instance.OnGrabMove;
-            @GrabMove.performed -= instance.OnGrabMove;
-            @GrabMove.canceled -= instance.OnGrabMove;
-        }
-
-        public void RemoveCallbacks(IXRIRightLocomotionActions instance)
-        {
-            if (m_Wrapper.m_XRIRightLocomotionActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IXRIRightLocomotionActions instance)
-        {
-            foreach (var item in m_Wrapper.m_XRIRightLocomotionActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_XRIRightLocomotionActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public XRIRightLocomotionActions @XRIRightLocomotion => new XRIRightLocomotionActions(this);
-
     // XRI Left Interaction
     private readonly InputActionMap m_XRILeftInteraction;
     private List<IXRILeftInteractionActions> m_XRILeftInteractionActionsCallbackInterfaces = new List<IXRILeftInteractionActions>();
@@ -3574,11 +1706,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_XRILeftInteraction_UIPress;
     private readonly InputAction m_XRILeftInteraction_UIPressValue;
     private readonly InputAction m_XRILeftInteraction_UIScroll;
-    private readonly InputAction m_XRILeftInteraction_TranslateManipulation;
-    private readonly InputAction m_XRILeftInteraction_RotateManipulation;
-    private readonly InputAction m_XRILeftInteraction_DirectionalManipulation;
-    private readonly InputAction m_XRILeftInteraction_ScaleToggle;
-    private readonly InputAction m_XRILeftInteraction_ScaleOverTime;
     public struct XRILeftInteractionActions
     {
         private @UserInputActionAsset m_Wrapper;
@@ -3590,11 +1717,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         public InputAction @UIPress => m_Wrapper.m_XRILeftInteraction_UIPress;
         public InputAction @UIPressValue => m_Wrapper.m_XRILeftInteraction_UIPressValue;
         public InputAction @UIScroll => m_Wrapper.m_XRILeftInteraction_UIScroll;
-        public InputAction @TranslateManipulation => m_Wrapper.m_XRILeftInteraction_TranslateManipulation;
-        public InputAction @RotateManipulation => m_Wrapper.m_XRILeftInteraction_RotateManipulation;
-        public InputAction @DirectionalManipulation => m_Wrapper.m_XRILeftInteraction_DirectionalManipulation;
-        public InputAction @ScaleToggle => m_Wrapper.m_XRILeftInteraction_ScaleToggle;
-        public InputAction @ScaleOverTime => m_Wrapper.m_XRILeftInteraction_ScaleOverTime;
         public InputActionMap Get() { return m_Wrapper.m_XRILeftInteraction; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -3625,21 +1747,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @UIScroll.started += instance.OnUIScroll;
             @UIScroll.performed += instance.OnUIScroll;
             @UIScroll.canceled += instance.OnUIScroll;
-            @TranslateManipulation.started += instance.OnTranslateManipulation;
-            @TranslateManipulation.performed += instance.OnTranslateManipulation;
-            @TranslateManipulation.canceled += instance.OnTranslateManipulation;
-            @RotateManipulation.started += instance.OnRotateManipulation;
-            @RotateManipulation.performed += instance.OnRotateManipulation;
-            @RotateManipulation.canceled += instance.OnRotateManipulation;
-            @DirectionalManipulation.started += instance.OnDirectionalManipulation;
-            @DirectionalManipulation.performed += instance.OnDirectionalManipulation;
-            @DirectionalManipulation.canceled += instance.OnDirectionalManipulation;
-            @ScaleToggle.started += instance.OnScaleToggle;
-            @ScaleToggle.performed += instance.OnScaleToggle;
-            @ScaleToggle.canceled += instance.OnScaleToggle;
-            @ScaleOverTime.started += instance.OnScaleOverTime;
-            @ScaleOverTime.performed += instance.OnScaleOverTime;
-            @ScaleOverTime.canceled += instance.OnScaleOverTime;
         }
 
         private void UnregisterCallbacks(IXRILeftInteractionActions instance)
@@ -3665,21 +1772,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @UIScroll.started -= instance.OnUIScroll;
             @UIScroll.performed -= instance.OnUIScroll;
             @UIScroll.canceled -= instance.OnUIScroll;
-            @TranslateManipulation.started -= instance.OnTranslateManipulation;
-            @TranslateManipulation.performed -= instance.OnTranslateManipulation;
-            @TranslateManipulation.canceled -= instance.OnTranslateManipulation;
-            @RotateManipulation.started -= instance.OnRotateManipulation;
-            @RotateManipulation.performed -= instance.OnRotateManipulation;
-            @RotateManipulation.canceled -= instance.OnRotateManipulation;
-            @DirectionalManipulation.started -= instance.OnDirectionalManipulation;
-            @DirectionalManipulation.performed -= instance.OnDirectionalManipulation;
-            @DirectionalManipulation.canceled -= instance.OnDirectionalManipulation;
-            @ScaleToggle.started -= instance.OnScaleToggle;
-            @ScaleToggle.performed -= instance.OnScaleToggle;
-            @ScaleToggle.canceled -= instance.OnScaleToggle;
-            @ScaleOverTime.started -= instance.OnScaleOverTime;
-            @ScaleOverTime.performed -= instance.OnScaleOverTime;
-            @ScaleOverTime.canceled -= instance.OnScaleOverTime;
         }
 
         public void RemoveCallbacks(IXRILeftInteractionActions instance)
@@ -3708,12 +1800,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_XRIRightInteraction_UIPress;
     private readonly InputAction m_XRIRightInteraction_UIPressValue;
     private readonly InputAction m_XRIRightInteraction_UIScroll;
-    private readonly InputAction m_XRIRightInteraction_TranslateManipulation;
-    private readonly InputAction m_XRIRightInteraction_RotateManipulation;
-    private readonly InputAction m_XRIRightInteraction_DirectionalManipulation;
-    private readonly InputAction m_XRIRightInteraction_ScaleToggle;
-    private readonly InputAction m_XRIRightInteraction_ScaleOverTime;
-    private readonly InputAction m_XRIRightInteraction_EnableDisable;
     public struct XRIRightInteractionActions
     {
         private @UserInputActionAsset m_Wrapper;
@@ -3725,12 +1811,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         public InputAction @UIPress => m_Wrapper.m_XRIRightInteraction_UIPress;
         public InputAction @UIPressValue => m_Wrapper.m_XRIRightInteraction_UIPressValue;
         public InputAction @UIScroll => m_Wrapper.m_XRIRightInteraction_UIScroll;
-        public InputAction @TranslateManipulation => m_Wrapper.m_XRIRightInteraction_TranslateManipulation;
-        public InputAction @RotateManipulation => m_Wrapper.m_XRIRightInteraction_RotateManipulation;
-        public InputAction @DirectionalManipulation => m_Wrapper.m_XRIRightInteraction_DirectionalManipulation;
-        public InputAction @ScaleToggle => m_Wrapper.m_XRIRightInteraction_ScaleToggle;
-        public InputAction @ScaleOverTime => m_Wrapper.m_XRIRightInteraction_ScaleOverTime;
-        public InputAction @EnableDisable => m_Wrapper.m_XRIRightInteraction_EnableDisable;
         public InputActionMap Get() { return m_Wrapper.m_XRIRightInteraction; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -3761,24 +1841,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @UIScroll.started += instance.OnUIScroll;
             @UIScroll.performed += instance.OnUIScroll;
             @UIScroll.canceled += instance.OnUIScroll;
-            @TranslateManipulation.started += instance.OnTranslateManipulation;
-            @TranslateManipulation.performed += instance.OnTranslateManipulation;
-            @TranslateManipulation.canceled += instance.OnTranslateManipulation;
-            @RotateManipulation.started += instance.OnRotateManipulation;
-            @RotateManipulation.performed += instance.OnRotateManipulation;
-            @RotateManipulation.canceled += instance.OnRotateManipulation;
-            @DirectionalManipulation.started += instance.OnDirectionalManipulation;
-            @DirectionalManipulation.performed += instance.OnDirectionalManipulation;
-            @DirectionalManipulation.canceled += instance.OnDirectionalManipulation;
-            @ScaleToggle.started += instance.OnScaleToggle;
-            @ScaleToggle.performed += instance.OnScaleToggle;
-            @ScaleToggle.canceled += instance.OnScaleToggle;
-            @ScaleOverTime.started += instance.OnScaleOverTime;
-            @ScaleOverTime.performed += instance.OnScaleOverTime;
-            @ScaleOverTime.canceled += instance.OnScaleOverTime;
-            @EnableDisable.started += instance.OnEnableDisable;
-            @EnableDisable.performed += instance.OnEnableDisable;
-            @EnableDisable.canceled += instance.OnEnableDisable;
         }
 
         private void UnregisterCallbacks(IXRIRightInteractionActions instance)
@@ -3804,24 +1866,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @UIScroll.started -= instance.OnUIScroll;
             @UIScroll.performed -= instance.OnUIScroll;
             @UIScroll.canceled -= instance.OnUIScroll;
-            @TranslateManipulation.started -= instance.OnTranslateManipulation;
-            @TranslateManipulation.performed -= instance.OnTranslateManipulation;
-            @TranslateManipulation.canceled -= instance.OnTranslateManipulation;
-            @RotateManipulation.started -= instance.OnRotateManipulation;
-            @RotateManipulation.performed -= instance.OnRotateManipulation;
-            @RotateManipulation.canceled -= instance.OnRotateManipulation;
-            @DirectionalManipulation.started -= instance.OnDirectionalManipulation;
-            @DirectionalManipulation.performed -= instance.OnDirectionalManipulation;
-            @DirectionalManipulation.canceled -= instance.OnDirectionalManipulation;
-            @ScaleToggle.started -= instance.OnScaleToggle;
-            @ScaleToggle.performed -= instance.OnScaleToggle;
-            @ScaleToggle.canceled -= instance.OnScaleToggle;
-            @ScaleOverTime.started -= instance.OnScaleOverTime;
-            @ScaleOverTime.performed -= instance.OnScaleOverTime;
-            @ScaleOverTime.canceled -= instance.OnScaleOverTime;
-            @EnableDisable.started -= instance.OnEnableDisable;
-            @EnableDisable.performed -= instance.OnEnableDisable;
-            @EnableDisable.canceled -= instance.OnEnableDisable;
         }
 
         public void RemoveCallbacks(IXRIRightInteractionActions instance)
@@ -3917,8 +1961,9 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_Ghost_Look;
     private readonly InputAction m_Ghost_LeftClick;
     private readonly InputAction m_Ghost_RightClick;
-    private readonly InputAction m_Ghost_Sprint;
     private readonly InputAction m_Ghost_OpenClose;
+    private readonly InputAction m_Ghost_SetHeight;
+    private readonly InputAction m_Ghost_Rotate;
     public struct GhostActions
     {
         private @UserInputActionAsset m_Wrapper;
@@ -3927,8 +1972,9 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         public InputAction @Look => m_Wrapper.m_Ghost_Look;
         public InputAction @LeftClick => m_Wrapper.m_Ghost_LeftClick;
         public InputAction @RightClick => m_Wrapper.m_Ghost_RightClick;
-        public InputAction @Sprint => m_Wrapper.m_Ghost_Sprint;
         public InputAction @OpenClose => m_Wrapper.m_Ghost_OpenClose;
+        public InputAction @SetHeight => m_Wrapper.m_Ghost_SetHeight;
+        public InputAction @Rotate => m_Wrapper.m_Ghost_Rotate;
         public InputActionMap Get() { return m_Wrapper.m_Ghost; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -3950,12 +1996,15 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @RightClick.started += instance.OnRightClick;
             @RightClick.performed += instance.OnRightClick;
             @RightClick.canceled += instance.OnRightClick;
-            @Sprint.started += instance.OnSprint;
-            @Sprint.performed += instance.OnSprint;
-            @Sprint.canceled += instance.OnSprint;
             @OpenClose.started += instance.OnOpenClose;
             @OpenClose.performed += instance.OnOpenClose;
             @OpenClose.canceled += instance.OnOpenClose;
+            @SetHeight.started += instance.OnSetHeight;
+            @SetHeight.performed += instance.OnSetHeight;
+            @SetHeight.canceled += instance.OnSetHeight;
+            @Rotate.started += instance.OnRotate;
+            @Rotate.performed += instance.OnRotate;
+            @Rotate.canceled += instance.OnRotate;
         }
 
         private void UnregisterCallbacks(IGhostActions instance)
@@ -3972,12 +2021,15 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
             @RightClick.started -= instance.OnRightClick;
             @RightClick.performed -= instance.OnRightClick;
             @RightClick.canceled -= instance.OnRightClick;
-            @Sprint.started -= instance.OnSprint;
-            @Sprint.performed -= instance.OnSprint;
-            @Sprint.canceled -= instance.OnSprint;
             @OpenClose.started -= instance.OnOpenClose;
             @OpenClose.performed -= instance.OnOpenClose;
             @OpenClose.canceled -= instance.OnOpenClose;
+            @SetHeight.started -= instance.OnSetHeight;
+            @SetHeight.performed -= instance.OnSetHeight;
+            @SetHeight.canceled -= instance.OnSetHeight;
+            @Rotate.started -= instance.OnRotate;
+            @Rotate.performed -= instance.OnRotate;
+            @Rotate.canceled -= instance.OnRotate;
         }
 
         public void RemoveCallbacks(IGhostActions instance)
@@ -4041,108 +2093,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
-
-    // XRI UI
-    private readonly InputActionMap m_XRIUI;
-    private List<IXRIUIActions> m_XRIUIActionsCallbackInterfaces = new List<IXRIUIActions>();
-    private readonly InputAction m_XRIUI_Navigate;
-    private readonly InputAction m_XRIUI_Submit;
-    private readonly InputAction m_XRIUI_Cancel;
-    private readonly InputAction m_XRIUI_Point;
-    private readonly InputAction m_XRIUI_Click;
-    private readonly InputAction m_XRIUI_ScrollWheel;
-    private readonly InputAction m_XRIUI_MiddleClick;
-    private readonly InputAction m_XRIUI_RightClick;
-    public struct XRIUIActions
-    {
-        private @UserInputActionAsset m_Wrapper;
-        public XRIUIActions(@UserInputActionAsset wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Navigate => m_Wrapper.m_XRIUI_Navigate;
-        public InputAction @Submit => m_Wrapper.m_XRIUI_Submit;
-        public InputAction @Cancel => m_Wrapper.m_XRIUI_Cancel;
-        public InputAction @Point => m_Wrapper.m_XRIUI_Point;
-        public InputAction @Click => m_Wrapper.m_XRIUI_Click;
-        public InputAction @ScrollWheel => m_Wrapper.m_XRIUI_ScrollWheel;
-        public InputAction @MiddleClick => m_Wrapper.m_XRIUI_MiddleClick;
-        public InputAction @RightClick => m_Wrapper.m_XRIUI_RightClick;
-        public InputActionMap Get() { return m_Wrapper.m_XRIUI; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(XRIUIActions set) { return set.Get(); }
-        public void AddCallbacks(IXRIUIActions instance)
-        {
-            if (instance == null || m_Wrapper.m_XRIUIActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_XRIUIActionsCallbackInterfaces.Add(instance);
-            @Navigate.started += instance.OnNavigate;
-            @Navigate.performed += instance.OnNavigate;
-            @Navigate.canceled += instance.OnNavigate;
-            @Submit.started += instance.OnSubmit;
-            @Submit.performed += instance.OnSubmit;
-            @Submit.canceled += instance.OnSubmit;
-            @Cancel.started += instance.OnCancel;
-            @Cancel.performed += instance.OnCancel;
-            @Cancel.canceled += instance.OnCancel;
-            @Point.started += instance.OnPoint;
-            @Point.performed += instance.OnPoint;
-            @Point.canceled += instance.OnPoint;
-            @Click.started += instance.OnClick;
-            @Click.performed += instance.OnClick;
-            @Click.canceled += instance.OnClick;
-            @ScrollWheel.started += instance.OnScrollWheel;
-            @ScrollWheel.performed += instance.OnScrollWheel;
-            @ScrollWheel.canceled += instance.OnScrollWheel;
-            @MiddleClick.started += instance.OnMiddleClick;
-            @MiddleClick.performed += instance.OnMiddleClick;
-            @MiddleClick.canceled += instance.OnMiddleClick;
-            @RightClick.started += instance.OnRightClick;
-            @RightClick.performed += instance.OnRightClick;
-            @RightClick.canceled += instance.OnRightClick;
-        }
-
-        private void UnregisterCallbacks(IXRIUIActions instance)
-        {
-            @Navigate.started -= instance.OnNavigate;
-            @Navigate.performed -= instance.OnNavigate;
-            @Navigate.canceled -= instance.OnNavigate;
-            @Submit.started -= instance.OnSubmit;
-            @Submit.performed -= instance.OnSubmit;
-            @Submit.canceled -= instance.OnSubmit;
-            @Cancel.started -= instance.OnCancel;
-            @Cancel.performed -= instance.OnCancel;
-            @Cancel.canceled -= instance.OnCancel;
-            @Point.started -= instance.OnPoint;
-            @Point.performed -= instance.OnPoint;
-            @Point.canceled -= instance.OnPoint;
-            @Click.started -= instance.OnClick;
-            @Click.performed -= instance.OnClick;
-            @Click.canceled -= instance.OnClick;
-            @ScrollWheel.started -= instance.OnScrollWheel;
-            @ScrollWheel.performed -= instance.OnScrollWheel;
-            @ScrollWheel.canceled -= instance.OnScrollWheel;
-            @MiddleClick.started -= instance.OnMiddleClick;
-            @MiddleClick.performed -= instance.OnMiddleClick;
-            @MiddleClick.canceled -= instance.OnMiddleClick;
-            @RightClick.started -= instance.OnRightClick;
-            @RightClick.performed -= instance.OnRightClick;
-            @RightClick.canceled -= instance.OnRightClick;
-        }
-
-        public void RemoveCallbacks(IXRIUIActions instance)
-        {
-            if (m_Wrapper.m_XRIUIActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IXRIUIActions instance)
-        {
-            foreach (var item in m_Wrapper.m_XRIUIActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_XRIUIActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public XRIUIActions @XRIUI => new XRIUIActions(this);
     public interface IXRILeftActions
     {
         void OnPosition(InputAction.CallbackContext context);
@@ -4150,12 +2100,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         void OnIsTracked(InputAction.CallbackContext context);
         void OnTrackingState(InputAction.CallbackContext context);
         void OnHapticDevice(InputAction.CallbackContext context);
-        void OnAimPosition(InputAction.CallbackContext context);
-        void OnAimRotation(InputAction.CallbackContext context);
-        void OnMetaAimFlags(InputAction.CallbackContext context);
-        void OnPinchPosition(InputAction.CallbackContext context);
-        void OnPokePosition(InputAction.CallbackContext context);
-        void OnPokeRotation(InputAction.CallbackContext context);
         void OnThumbstick(InputAction.CallbackContext context);
     }
     public interface IXRIRightActions
@@ -4165,33 +2109,7 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         void OnIsTracked(InputAction.CallbackContext context);
         void OnTrackingState(InputAction.CallbackContext context);
         void OnHapticDevice(InputAction.CallbackContext context);
-        void OnAimPosition(InputAction.CallbackContext context);
-        void OnAimRotation(InputAction.CallbackContext context);
-        void OnMetaAimFlags(InputAction.CallbackContext context);
-        void OnPinchPosition(InputAction.CallbackContext context);
-        void OnPokePosition(InputAction.CallbackContext context);
-        void OnPokeRotation(InputAction.CallbackContext context);
-        void OnGripPosition(InputAction.CallbackContext context);
-        void OnGripRotation(InputAction.CallbackContext context);
         void OnThumbstick(InputAction.CallbackContext context);
-    }
-    public interface IXRILeftLocomotionActions
-    {
-        void OnTeleportMode(InputAction.CallbackContext context);
-        void OnTeleportModeCancel(InputAction.CallbackContext context);
-        void OnTurn(InputAction.CallbackContext context);
-        void OnSnapTurn(InputAction.CallbackContext context);
-        void OnMove(InputAction.CallbackContext context);
-        void OnGrabMove(InputAction.CallbackContext context);
-    }
-    public interface IXRIRightLocomotionActions
-    {
-        void OnTeleportMode(InputAction.CallbackContext context);
-        void OnTeleportModeCancel(InputAction.CallbackContext context);
-        void OnTurn(InputAction.CallbackContext context);
-        void OnSnapTurn(InputAction.CallbackContext context);
-        void OnMove(InputAction.CallbackContext context);
-        void OnGrabMove(InputAction.CallbackContext context);
     }
     public interface IXRILeftInteractionActions
     {
@@ -4202,11 +2120,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         void OnUIPress(InputAction.CallbackContext context);
         void OnUIPressValue(InputAction.CallbackContext context);
         void OnUIScroll(InputAction.CallbackContext context);
-        void OnTranslateManipulation(InputAction.CallbackContext context);
-        void OnRotateManipulation(InputAction.CallbackContext context);
-        void OnDirectionalManipulation(InputAction.CallbackContext context);
-        void OnScaleToggle(InputAction.CallbackContext context);
-        void OnScaleOverTime(InputAction.CallbackContext context);
     }
     public interface IXRIRightInteractionActions
     {
@@ -4217,12 +2130,6 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         void OnUIPress(InputAction.CallbackContext context);
         void OnUIPressValue(InputAction.CallbackContext context);
         void OnUIScroll(InputAction.CallbackContext context);
-        void OnTranslateManipulation(InputAction.CallbackContext context);
-        void OnRotateManipulation(InputAction.CallbackContext context);
-        void OnDirectionalManipulation(InputAction.CallbackContext context);
-        void OnScaleToggle(InputAction.CallbackContext context);
-        void OnScaleOverTime(InputAction.CallbackContext context);
-        void OnEnableDisable(InputAction.CallbackContext context);
     }
     public interface IXRIHeadActions
     {
@@ -4237,22 +2144,12 @@ public partial class @UserInputActionAsset: IInputActionCollection2, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnLeftClick(InputAction.CallbackContext context);
         void OnRightClick(InputAction.CallbackContext context);
-        void OnSprint(InputAction.CallbackContext context);
         void OnOpenClose(InputAction.CallbackContext context);
+        void OnSetHeight(InputAction.CallbackContext context);
+        void OnRotate(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
         void OnEnableDisable(InputAction.CallbackContext context);
-    }
-    public interface IXRIUIActions
-    {
-        void OnNavigate(InputAction.CallbackContext context);
-        void OnSubmit(InputAction.CallbackContext context);
-        void OnCancel(InputAction.CallbackContext context);
-        void OnPoint(InputAction.CallbackContext context);
-        void OnClick(InputAction.CallbackContext context);
-        void OnScrollWheel(InputAction.CallbackContext context);
-        void OnMiddleClick(InputAction.CallbackContext context);
-        void OnRightClick(InputAction.CallbackContext context);
     }
 }

@@ -1,64 +1,79 @@
-using System;
+using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterController))]
 public class GhostModeController : MonoBehaviour {
-    [SerializeField] private Camera camera;
-    //[SerializeField] public float sensitivity = 4f;
-    [SerializeField] public float MoveSpeed = 6f;
-    [SerializeField] public float sprintMultiplier = 2f;
     public static GhostModeController Instance;
-    //private float xRotation = 0f;
-    //private float yRotation = 0f;
-    //private Vector2 look;
+    
+    [SerializeField] private Camera camera;
+    
+    [SerializeField] public float moveSpeed = 6f;
+    
+    
     private Vector2 move;
     private CharacterController controller;
 
+    private bool isRotating = false;
+
     private void Start() {
         Instance = this;
-        
         controller = GetComponent<CharacterController>();
-        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update() {
-        // Handle input
-        //look = UserInputManager.Instance.lookInput;
         move = UserInputManager.Instance.moveInput;
-
-        // // Mouse rotation
-        // float mouseX = look.x * sensitivity * Time.deltaTime;
-        // float mouseY = look.y * sensitivity * Time.deltaTime;
-        //
-        // xRotation -= mouseY;
-        // xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        // yRotation += mouseX;
-
-        // Apply camera and body rotation
-        //camera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        transform.localRotation = Quaternion.Euler(0f, camera.transform.rotation.y, 0f);
     }
 
     void FixedUpdate() {
-        float currentSpeed = UserInputManager.Instance.isSprinting
-            ? MoveSpeed * sprintMultiplier
-            : MoveSpeed;
+        PlayerMovement();
+        PlayerRotation();
+    }
 
-        // Move in the direction the camera is facing (ignoring vertical tilt)
-        Vector3 forward = camera.transform.forward;
-        Vector3 right = camera.transform.right;
-
+    private void PlayerMovement() {
+        float currentSpeed = moveSpeed;
+        Vector3 moveDir;
+        if (UserInputManager.Instance.isMovingVertically) {
+            moveDir = new Vector3(0f, currentSpeed * move.y, 0f);
+        }
+        else {
+            // Move in the direction the camera is facing (ignoring vertical tilt)
+            Vector3 forward = camera.transform.forward;
+            Vector3 right = camera.transform.right;
         
-        right.y = 0;
-        forward.Normalize();
-        right.Normalize();
+            right.y = 0;
+            forward.Normalize();
+            right.Normalize();
 
-        Vector3 moveDir = (right * move.x + forward * move.y) * currentSpeed;
+            moveDir = (right * move.x + forward * move.y) * currentSpeed;
+            moveDir = new Vector3(moveDir.x, 0f, moveDir.z);
+        }
         controller.Move(moveDir * Time.fixedDeltaTime);
     }
-    
 
-    
-    
+    private void PlayerRotation() {
+        Vector2 rotateInput = UserInputManager.Instance.rotateInput;
+        if (rotateInput.x != 0 && !isRotating) {
+            StartCoroutine(RotatePlayer(rotateInput.x > 0 ? 1 : -1));
+        }
+    }
+
+    private IEnumerator RotatePlayer(float dir) {
+        // dir -> -1 or 1
+        isRotating = true;
+        Quaternion initialRotation = transform.rotation;
+        Quaternion finalRotation = initialRotation * Quaternion.Euler(0, 45f * dir, 0);
+
+        float current = 0f;
+        float duration = 0.2f;
+        
+        while (current < duration) {
+            float t = current / duration;
+            transform.rotation = Quaternion.Lerp(initialRotation, finalRotation, t);
+            current += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.rotation = finalRotation;
+        isRotating = false;
+    }
 }
 
