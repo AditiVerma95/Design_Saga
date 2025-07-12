@@ -2793,7 +2793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4956,7 +4956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1116281727}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Furniture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6898,7 +6898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1478835872}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8316,7 +8316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0004106345, y: 0.0011098332}
+  m_AnchoredPosition: {x: -0.0004106345, y: -0.00045936133}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1875217339
@@ -9115,7 +9115,7 @@ GameObject:
   - component: {fileID: 848398690360387053}
   - component: {fileID: 7934314224834243339}
   - component: {fileID: 8750112265636323498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Carpet_1
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -9255,7 +9255,7 @@ GameObject:
   - component: {fileID: 5883570657875571781}
   - component: {fileID: 131513057680396415}
   - component: {fileID: 5883570657875571782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9434,7 +9434,7 @@ GameObject:
   - component: {fileID: 5681154541235810878}
   - component: {fileID: 1858826180051772174}
   - component: {fileID: 5681154541235810879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Pillow_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9476,7 +9476,7 @@ GameObject:
   - component: {fileID: 4156091006581222673}
   - component: {fileID: 1201433505156228913}
   - component: {fileID: 4156091006581222674}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Pillow_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9667,7 +9667,7 @@ GameObject:
   - component: {fileID: 1199956058224075745}
   - component: {fileID: 203721365412903696}
   - component: {fileID: 6916094204020056019}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9856,7 +9856,7 @@ GameObject:
   - component: {fileID: 6076275147148374057}
   - component: {fileID: 3702981657791237679}
   - component: {fileID: 3267135701696420827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cabinets_P1
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -10004,7 +10004,7 @@ GameObject:
   - component: {fileID: 5618497948701760883}
   - component: {fileID: 1345320064852923758}
   - component: {fileID: 5618497948701760884}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10129,7 +10129,7 @@ GameObject:
   - component: {fileID: 8604325390513750460}
   - component: {fileID: 3915507853711059175}
   - component: {fileID: 8604325390513750461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Blanket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10211,7 +10211,7 @@ GameObject:
   - component: {fileID: 5143824418525218311}
   - component: {fileID: 8601242201589301205}
   - component: {fileID: 4080821877115613529}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Piano_Chair
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -10334,7 +10334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4997025014707818384}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoomLights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10361,7 +10361,7 @@ GameObject:
   - component: {fileID: 1284865225551129494}
   - component: {fileID: 8362767516975408496}
   - component: {fileID: 7168737466552610513}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Carpet_1 (1)
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -10380,7 +10380,7 @@ GameObject:
   - component: {fileID: 8975633777637396978}
   - component: {fileID: 8285027416973090288}
   - component: {fileID: 8975633777637396979}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Back_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10398,7 +10398,7 @@ GameObject:
   - component: {fileID: 8279031222621726058}
   - component: {fileID: 854899310066685798}
   - component: {fileID: 9154496214021718181}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15425,7 +15425,7 @@ GameObject:
   - component: {fileID: 5295858535588743459}
   - component: {fileID: 1118798145762840754}
   - component: {fileID: 6671274211121113871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20239,7 +20239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6221165905485189793}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20335,7 +20335,7 @@ GameObject:
   - component: {fileID: 7489520498946134675}
   - component: {fileID: 7158248980733980352}
   - component: {fileID: 7783672651485244866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20354,7 +20354,7 @@ GameObject:
   - component: {fileID: 3977091156297088711}
   - component: {fileID: 2496218860313687471}
   - component: {fileID: 3153668610937871530}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Piano
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -20373,7 +20373,7 @@ GameObject:
   - component: {fileID: 6493022544454977489}
   - component: {fileID: 7448203859692661004}
   - component: {fileID: 7830910279403815617}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Table
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -30757,7 +30757,7 @@ GameObject:
   - component: {fileID: 2059131232318982281}
   - component: {fileID: 3254686447005924332}
   - component: {fileID: 9007376655040807110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30800,7 +30800,7 @@ GameObject:
   - component: {fileID: 5641796070396686347}
   - component: {fileID: 7090580229010657886}
   - component: {fileID: 2800310898745498508}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bed_Room_Lights (1)
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -31057,7 +31057,7 @@ GameObject:
   - component: {fileID: 4916592012074038573}
   - component: {fileID: 6394033988594590315}
   - component: {fileID: 7392241791596330332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Seat_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31076,7 +31076,7 @@ GameObject:
   - component: {fileID: 2604803328107713949}
   - component: {fileID: 448296092907471612}
   - component: {fileID: 4719385404165532688}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Left_Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31228,7 +31228,7 @@ GameObject:
   - component: {fileID: 303617519812717083}
   - component: {fileID: 3859534719622076798}
   - component: {fileID: 7324413392659554900}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31461,7 +31461,7 @@ GameObject:
   - component: {fileID: 6264091289369498265}
   - component: {fileID: 8846168433429721292}
   - component: {fileID: 4501798182194116894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bed_Room_Lights
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -31480,7 +31480,7 @@ GameObject:
   - component: {fileID: 346164876113558271}
   - component: {fileID: 3855145564069098427}
   - component: {fileID: 3937370826334371494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Bottom_P1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31565,7 +31565,7 @@ GameObject:
   - component: {fileID: 6737765507723475220}
   - component: {fileID: 2646264363500997400}
   - component: {fileID: 5795869671956454619}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31649,7 +31649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7655172451070268398}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoomLights (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31728,7 +31728,7 @@ GameObject:
   - component: {fileID: 1600735544130288061}
   - component: {fileID: 6718236888281656387}
   - component: {fileID: 13350986756892484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Bottom_P2 2
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -32116,7 +32116,7 @@ GameObject:
   - component: {fileID: 5205784109099424946}
   - component: {fileID: 2575377331037467301}
   - component: {fileID: 5269017414007534576}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Living_Room_Lights
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -32345,7 +32345,7 @@ GameObject:
   - component: {fileID: 6768220504227400397}
   - component: {fileID: 4274463700931663240}
   - component: {fileID: 6058339047172622762}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cabinets_P3
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -32518,7 +32518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1175592681078640413}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoomLights (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32640,7 +32640,7 @@ GameObject:
   - component: {fileID: 3626101977301450817}
   - component: {fileID: 6472162566474788438}
   - component: {fileID: 3707420109453635331}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Living_Room_Lights
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -32939,7 +32939,7 @@ GameObject:
   - component: {fileID: 4569845925776565026}
   - component: {fileID: 4951901372988189800}
   - component: {fileID: 7878429098042378874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Right_Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33008,7 +33008,7 @@ GameObject:
   - component: {fileID: 8598605074791552706}
   - component: {fileID: 6467560203680572596}
   - component: {fileID: 8598605074791552707}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Pillow_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33098,7 +33098,7 @@ GameObject:
   - component: {fileID: 2540721335934316766}
   - component: {fileID: 4641770817468662359}
   - component: {fileID: 7386499287008424958}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Seat_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33201,7 +33201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7309612133551428948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cabinets_P2 1 (1)
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -33295,7 +33295,7 @@ GameObject:
   - component: {fileID: 3513601524462485684}
   - component: {fileID: 4479353352687364398}
   - component: {fileID: 6950326040412183219}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cabinets_P2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38317,7 +38317,7 @@ GameObject:
   - component: {fileID: 6459385810684172799}
   - component: {fileID: 6061201842746872540}
   - component: {fileID: 1524713789401116557}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FLower_Pot (1)
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -38336,7 +38336,7 @@ GameObject:
   - component: {fileID: 8679332136097727823}
   - component: {fileID: 4715644643530951238}
   - component: {fileID: 8679332136097727824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Seat_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38373,7 +38373,7 @@ GameObject:
   - component: {fileID: 7000076032731093795}
   - component: {fileID: 1318718337426925330}
   - component: {fileID: 4018388661442126263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Metal_Table_2
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -38776,7 +38776,7 @@ GameObject:
   - component: {fileID: 6263190886191614525}
   - component: {fileID: 6580530023394165022}
   - component: {fileID: 1902723401622600783}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FLower_Pot
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -39357,7 +39357,7 @@ GameObject:
   - component: {fileID: 615074028325435801}
   - component: {fileID: 8192364368971418517}
   - component: {fileID: 389390206244478038}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39512,7 +39512,7 @@ GameObject:
   - component: {fileID: 5571261196747679739}
   - component: {fileID: 4335017565769147807}
   - component: {fileID: 7225864231191086823}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Back_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49190,7 +49190,7 @@ GameObject:
   - component: {fileID: 8392457014304026146}
   - component: {fileID: 5859284186838214681}
   - component: {fileID: 8392457014304026147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Back_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49375,7 +49375,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7184397372971816264}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49409,7 +49409,7 @@ GameObject:
   - component: {fileID: 2105113446715874367}
   - component: {fileID: 8553990043856777768}
   - component: {fileID: 2024152519468348285}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Living_Room_Lights
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -49486,7 +49486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3555622693903127640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49745,7 +49745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4976405972259944091}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cabinets_P2 1
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -49764,7 +49764,7 @@ GameObject:
   - component: {fileID: 3330671796396259507}
   - component: {fileID: 6574940660036543596}
   - component: {fileID: 8048708419517104328}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49819,7 +49819,7 @@ GameObject:
   - component: {fileID: 1206290304559473531}
   - component: {fileID: 2186101211642120929}
   - component: {fileID: 4615010846688557436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cabinets_P2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49846,7 +49846,7 @@ GameObject:
   - component: {fileID: 1196265323581139799}
   - component: {fileID: 4374295400804059394}
   - component: {fileID: 8651099014407307472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bed_Room_Lights (2)
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -49884,7 +49884,7 @@ GameObject:
   - component: {fileID: 5791936275009432421}
   - component: {fileID: 9054720044660648724}
   - component: {fileID: 9054720044660648725}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sofa_Pillow_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49990,7 +49990,7 @@ GameObject:
   - component: {fileID: 2254045963915569689}
   - component: {fileID: 5715516345142809317}
   - component: {fileID: 8199342143569879746}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50166,7 +50166,7 @@ GameObject:
   - component: {fileID: 4774329803233989589}
   - component: {fileID: 8356617466306846896}
   - component: {fileID: 2581391631466961818}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50850,7 +50850,7 @@ GameObject:
   - component: {fileID: 1263782154413086088}
   - component: {fileID: 1219251740594002909}
   - component: {fileID: 8713575228231966419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51010,7 +51010,7 @@ GameObject:
   - component: {fileID: 1803070533225658380}
   - component: {fileID: 3830497971553000025}
   - component: {fileID: 8183840238841533323}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bed_Room_Lights (3)
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
@@ -56255,7 +56255,7 @@ GameObject:
   - component: {fileID: 5466776523046043790}
   - component: {fileID: 8819346245660390379}
   - component: {fileID: 3048591574830762177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

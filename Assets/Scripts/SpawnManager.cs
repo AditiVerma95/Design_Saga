@@ -64,7 +64,7 @@ public class SpawnManager : MonoBehaviour {
         if (!isSettingMaterial) return;
 
         Ray ray = new Ray(rightHandController.position, rightHandController.forward);
-        if (Physics.Raycast(ray, out RaycastHit hit, 100f)) {
+        if (Physics.Raycast(ray, out RaycastHit hit, 50f, SpawnableLayer)) {
             Debug.Log("Hit object: " + hit.collider.name);
 
             Renderer[] renderers = hit.collider.GetComponentsInChildren<Renderer>();
@@ -94,6 +94,7 @@ public class SpawnManager : MonoBehaviour {
             Debug.Log(hit.point);
             GameObject spawned = Instantiate(UIManager.Instance.currentSelectedPrefab[1], hit.point, Quaternion.identity);
             spawned.tag = "SpawnedObject";
+            spawned.layer = 6;
         }
     }
     
