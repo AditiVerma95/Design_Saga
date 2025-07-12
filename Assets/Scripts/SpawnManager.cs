@@ -62,28 +62,29 @@ public class SpawnManager : MonoBehaviour {
     
     public void SetSelectedMaterial(object sender, EventArgs e) {
         if (!isSettingMaterial) return;
-        
-        if (Input.GetMouseButtonDown(0) && currentMat != null) {
-            Ray ray = new Ray(rightHandController.position, rightHandController.forward);
 
-            if (Physics.Raycast(ray, out RaycastHit hit)) {
-           
-                Renderer renderer = hit.collider.GetComponent<Renderer>();
-                if (renderer != null) {
-                    renderer.material = currentMat;
-                    var materials = renderer.materials;
-                    for (int i = 0; i < materials.Length; i++) {
-                        if (materials[i].name.Contains("Glass") || materials[i].shader.name.Contains("Transparent")) continue;
-                        materials[i] = currentMat;
-                    }
-                    renderer.materials = materials;
+        Ray ray = new Ray(rightHandController.position, rightHandController.forward);
+        if (Physics.Raycast(ray, out RaycastHit hit, 100f)) {
+            Debug.Log("Hit object: " + hit.collider.name);
 
+            Renderer[] renderers = hit.collider.GetComponentsInChildren<Renderer>();
+            if (renderers.Length == 0) {
+                Debug.LogWarning("❌ No Renderer found on hit object or its children.");
+                return;
+            }
 
+            foreach (var renderer in renderers) {
+                Material[] newMats = new Material[renderer.sharedMaterials.Length];
+                for (int i = 0; i < newMats.Length; i++) {
+                    newMats[i] = currentMat;
                 }
-            
+
+                renderer.materials = newMats;
+                Debug.Log($"✅ Applied material to {renderer.name} with {newMats.Length} slots.");
             }
         }
     }
+ 
     
     public void SpawnObject(object sender, EventArgs e) {
         if(isSettingMaterial) return;
